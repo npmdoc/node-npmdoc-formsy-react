@@ -1,0 +1,4108 @@
+<html><head></head><body><div class="apidocDiv">
+<style>
+/*csslint
+*/
+.apidocDiv {
+    background: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.apidocDiv a[href] {
+    color: #33f;
+    font-weight: bold;
+    text-decoration: none;
+}
+.apidocDiv a[href]:hover {
+    text-decoration: underline;
+}
+.apidocCodeCommentSpan {
+    background: #bbf;
+    color: #000;
+    display: block;
+}
+.apidocCodeKeywordSpan {
+    color: #d00;
+    font-weight: bold;
+}
+.apidocCodePre {
+    background: #eef;
+    border: 1px solid;
+    color: #777;
+    padding: 5px;
+    white-space: pre-wrap;
+}
+.apidocFooterDiv {
+    margin-top: 20px;
+    text-align: center;
+}
+.apidocModuleLi {
+    margin-top: 10px;
+}
+.apidocSectionDiv {
+    border-top: 1px solid;
+    margin-top: 20px;
+}
+.apidocSignatureSpan {
+    color: #777;
+    font-weight: bold;
+}
+</style>
+<h1>api documentation for
+    <a href="https://github.com/christianalfoni/formsy-react#readme">formsy-react (v0.19.2)</a>
+</h1>
+<h4>A form input builder and validator for React JS</h4>
+<div class="apidocSectionDiv"><a href="#apidoc.tableOfContents" id="apidoc.tableOfContents"><h1>table of contents</h1></a><ol>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.formsy-react">module formsy-react</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.formsy-react.Decorator">
+            function <span class="apidocSignatureSpan">formsy-react.</span>Decorator
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.formsy-react.Form">
+            function <span class="apidocSignatureSpan">formsy-react.</span>Form
+            <span class="apidocSignatureSpan">(props, context, updater)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.formsy-react.HOC">
+            function <span class="apidocSignatureSpan">formsy-react.</span>HOC
+            <span class="apidocSignatureSpan">(Component)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.formsy-react.addValidationRule">
+            function <span class="apidocSignatureSpan">formsy-react.</span>addValidationRule
+            <span class="apidocSignatureSpan">(name, func)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.formsy-react.defaults">
+            function <span class="apidocSignatureSpan">formsy-react.</span>defaults
+            <span class="apidocSignatureSpan">(passedOptions)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">formsy-react.</span>Form.childContextTypes</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">formsy-react.</span>Form.defaultProps</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">formsy-react.</span>Form.prototype</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">formsy-react.</span>Form.prototype.__reactAutoBindMap</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">formsy-react.</span>Mixin</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">formsy-react.</span>Mixin.contextTypes</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">formsy-react.</span>utils</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">formsy-react.</span>validationRules</span>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.formsy-react.Form">module formsy-react.Form</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.formsy-react.Form.Form">
+            function <span class="apidocSignatureSpan">formsy-react.</span>Form
+            <span class="apidocSignatureSpan">(props, context, updater)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.formsy-react.Form.getDefaultProps">
+            function <span class="apidocSignatureSpan">formsy-react.Form.</span>getDefaultProps
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">formsy-react.Form.</span>childContextTypes</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">formsy-react.Form.</span>defaultProps</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">formsy-react.Form.</span>displayName</span>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.formsy-react.Form.childContextTypes">module formsy-react.Form.childContextTypes</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.formsy-react.Form.childContextTypes.formsy">
+            function <span class="apidocSignatureSpan">formsy-react.Form.childContextTypes.</span>formsy
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.formsy-react.Form.defaultProps">module formsy-react.Form.defaultProps</a><ol>
+
+        <li>
+
+            <span class="apidocSignatureSpan">boolean <span class="apidocSignatureSpan">formsy-react.Form.defaultProps.</span>preventExternalInvalidation</span>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.formsy-react.Form.defaultProps.onChange">
+            function <span class="apidocSignatureSpan">formsy-react.Form.defaultProps.</span>onChange
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.formsy-react.Form.defaultProps.onError">
+            function <span class="apidocSignatureSpan">formsy-react.Form.defaultProps.</span>onError
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.formsy-react.Form.defaultProps.onInvalid">
+            function <span class="apidocSignatureSpan">formsy-react.Form.defaultProps.</span>onInvalid
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.formsy-react.Form.defaultProps.onInvalidSubmit">
+            function <span class="apidocSignatureSpan">formsy-react.Form.defaultProps.</span>onInvalidSubmit
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.formsy-react.Form.defaultProps.onSubmit">
+            function <span class="apidocSignatureSpan">formsy-react.Form.defaultProps.</span>onSubmit
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.formsy-react.Form.defaultProps.onSuccess">
+            function <span class="apidocSignatureSpan">formsy-react.Form.defaultProps.</span>onSuccess
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.formsy-react.Form.defaultProps.onValid">
+            function <span class="apidocSignatureSpan">formsy-react.Form.defaultProps.</span>onValid
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.formsy-react.Form.defaultProps.onValidSubmit">
+            function <span class="apidocSignatureSpan">formsy-react.Form.defaultProps.</span>onValidSubmit
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">formsy-react.Form.defaultProps.</span>validationErrors</span>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.formsy-react.Form.prototype">module formsy-react.Form.prototype</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.formsy-react.Form.prototype.attachToForm">
+            function <span class="apidocSignatureSpan">formsy-react.Form.prototype.</span>attachToForm
+            <span class="apidocSignatureSpan">(component)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.formsy-react.Form.prototype.componentDidMount">
+            function <span class="apidocSignatureSpan">formsy-react.Form.prototype.</span>componentDidMount
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.formsy-react.Form.prototype.componentDidUpdate">
+            function <span class="apidocSignatureSpan">formsy-react.Form.prototype.</span>componentDidUpdate
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.formsy-react.Form.prototype.componentWillMount">
+            function <span class="apidocSignatureSpan">formsy-react.Form.prototype.</span>componentWillMount
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.formsy-react.Form.prototype.componentWillUpdate">
+            function <span class="apidocSignatureSpan">formsy-react.Form.prototype.</span>componentWillUpdate
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.formsy-react.Form.prototype.constructor">
+            function <span class="apidocSignatureSpan">formsy-react.Form.prototype.</span>constructor
+            <span class="apidocSignatureSpan">(props, context, updater)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.formsy-react.Form.prototype.detachFromForm">
+            function <span class="apidocSignatureSpan">formsy-react.Form.prototype.</span>detachFromForm
+            <span class="apidocSignatureSpan">(component)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.formsy-react.Form.prototype.getChildContext">
+            function <span class="apidocSignatureSpan">formsy-react.Form.prototype.</span>getChildContext
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.formsy-react.Form.prototype.getCurrentValues">
+            function <span class="apidocSignatureSpan">formsy-react.Form.prototype.</span>getCurrentValues
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.formsy-react.Form.prototype.getDOMNode">
+            function <span class="apidocSignatureSpan">formsy-react.Form.prototype.</span>getDOMNode
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.formsy-react.Form.prototype.getInitialState">
+            function <span class="apidocSignatureSpan">formsy-react.Form.prototype.</span>getInitialState
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.formsy-react.Form.prototype.getModel">
+            function <span class="apidocSignatureSpan">formsy-react.Form.prototype.</span>getModel
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.formsy-react.Form.prototype.getPristineValues">
+            function <span class="apidocSignatureSpan">formsy-react.Form.prototype.</span>getPristineValues
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.formsy-react.Form.prototype.isChanged">
+            function <span class="apidocSignatureSpan">formsy-react.Form.prototype.</span>isChanged
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.formsy-react.Form.prototype.isFormDisabled">
+            function <span class="apidocSignatureSpan">formsy-react.Form.prototype.</span>isFormDisabled
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.formsy-react.Form.prototype.mapModel">
+            function <span class="apidocSignatureSpan">formsy-react.Form.prototype.</span>mapModel
+            <span class="apidocSignatureSpan">(model)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.formsy-react.Form.prototype.render">
+            function <span class="apidocSignatureSpan">formsy-react.Form.prototype.</span>render
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.formsy-react.Form.prototype.reset">
+            function <span class="apidocSignatureSpan">formsy-react.Form.prototype.</span>reset
+            <span class="apidocSignatureSpan">(data)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.formsy-react.Form.prototype.resetModel">
+            function <span class="apidocSignatureSpan">formsy-react.Form.prototype.</span>resetModel
+            <span class="apidocSignatureSpan">(data)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.formsy-react.Form.prototype.runRules">
+            function <span class="apidocSignatureSpan">formsy-react.Form.prototype.</span>runRules
+            <span class="apidocSignatureSpan">(value, currentValues, validations)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.formsy-react.Form.prototype.runValidation">
+            function <span class="apidocSignatureSpan">formsy-react.Form.prototype.</span>runValidation
+            <span class="apidocSignatureSpan">(component, value)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.formsy-react.Form.prototype.setFormPristine">
+            function <span class="apidocSignatureSpan">formsy-react.Form.prototype.</span>setFormPristine
+            <span class="apidocSignatureSpan">(isPristine)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.formsy-react.Form.prototype.setInputValidationErrors">
+            function <span class="apidocSignatureSpan">formsy-react.Form.prototype.</span>setInputValidationErrors
+            <span class="apidocSignatureSpan">(errors)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.formsy-react.Form.prototype.submit">
+            function <span class="apidocSignatureSpan">formsy-react.Form.prototype.</span>submit
+            <span class="apidocSignatureSpan">(event)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.formsy-react.Form.prototype.updateInputsWithError">
+            function <span class="apidocSignatureSpan">formsy-react.Form.prototype.</span>updateInputsWithError
+            <span class="apidocSignatureSpan">(errors)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.formsy-react.Form.prototype.validate">
+            function <span class="apidocSignatureSpan">formsy-react.Form.prototype.</span>validate
+            <span class="apidocSignatureSpan">(component)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.formsy-react.Form.prototype.validateForm">
+            function <span class="apidocSignatureSpan">formsy-react.Form.prototype.</span>validateForm
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">formsy-react.Form.prototype.</span>__reactAutoBindMap</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">formsy-react.Form.prototype.</span>childContextTypes</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">formsy-react.Form.prototype.</span>componentWillReceiveProps</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">formsy-react.Form.prototype.</span>componentWillUnmount</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">formsy-react.Form.prototype.</span>contextTypes</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">formsy-react.Form.prototype.</span>getDefaultProps</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">formsy-react.Form.prototype.</span>mixins</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">formsy-react.Form.prototype.</span>propTypes</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">formsy-react.Form.prototype.</span>shouldComponentUpdate</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">formsy-react.Form.prototype.</span>statics</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">formsy-react.Form.prototype.</span>updateComponent</span>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.formsy-react.Form.prototype.__reactAutoBindMap">module formsy-react.Form.prototype.__reactAutoBindMap</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.formsy-react.Form.prototype.__reactAutoBindMap.attachToForm">
+            function <span class="apidocSignatureSpan">formsy-react.Form.prototype.__reactAutoBindMap.</span>attachToForm
+            <span class="apidocSignatureSpan">(component)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.formsy-react.Form.prototype.__reactAutoBindMap.detachFromForm">
+            function <span class="apidocSignatureSpan">formsy-react.Form.prototype.__reactAutoBindMap.</span>detachFromForm
+            <span class="apidocSignatureSpan">(component)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.formsy-react.Form.prototype.__reactAutoBindMap.getCurrentValues">
+            function <span class="apidocSignatureSpan">formsy-react.Form.prototype.__reactAutoBindMap.</span>getCurrentValues
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.formsy-react.Form.prototype.__reactAutoBindMap.getDOMNode">
+            function <span class="apidocSignatureSpan">formsy-react.Form.prototype.__reactAutoBindMap.</span>getDOMNode
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.formsy-react.Form.prototype.__reactAutoBindMap.getModel">
+            function <span class="apidocSignatureSpan">formsy-react.Form.prototype.__reactAutoBindMap.</span>getModel
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.formsy-react.Form.prototype.__reactAutoBindMap.getPristineValues">
+            function <span class="apidocSignatureSpan">formsy-react.Form.prototype.__reactAutoBindMap.</span>getPristineValues
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.formsy-react.Form.prototype.__reactAutoBindMap.isChanged">
+            function <span class="apidocSignatureSpan">formsy-react.Form.prototype.__reactAutoBindMap.</span>isChanged
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.formsy-react.Form.prototype.__reactAutoBindMap.isFormDisabled">
+            function <span class="apidocSignatureSpan">formsy-react.Form.prototype.__reactAutoBindMap.</span>isFormDisabled
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.formsy-react.Form.prototype.__reactAutoBindMap.mapModel">
+            function <span class="apidocSignatureSpan">formsy-react.Form.prototype.__reactAutoBindMap.</span>mapModel
+            <span class="apidocSignatureSpan">(model)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.formsy-react.Form.prototype.__reactAutoBindMap.reset">
+            function <span class="apidocSignatureSpan">formsy-react.Form.prototype.__reactAutoBindMap.</span>reset
+            <span class="apidocSignatureSpan">(data)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.formsy-react.Form.prototype.__reactAutoBindMap.resetModel">
+            function <span class="apidocSignatureSpan">formsy-react.Form.prototype.__reactAutoBindMap.</span>resetModel
+            <span class="apidocSignatureSpan">(data)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.formsy-react.Form.prototype.__reactAutoBindMap.runRules">
+            function <span class="apidocSignatureSpan">formsy-react.Form.prototype.__reactAutoBindMap.</span>runRules
+            <span class="apidocSignatureSpan">(value, currentValues, validations)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.formsy-react.Form.prototype.__reactAutoBindMap.runValidation">
+            function <span class="apidocSignatureSpan">formsy-react.Form.prototype.__reactAutoBindMap.</span>runValidation
+            <span class="apidocSignatureSpan">(component, value)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.formsy-react.Form.prototype.__reactAutoBindMap.setFormPristine">
+            function <span class="apidocSignatureSpan">formsy-react.Form.prototype.__reactAutoBindMap.</span>setFormPristine
+            <span class="apidocSignatureSpan">(isPristine)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.formsy-react.Form.prototype.__reactAutoBindMap.setInputValidationErrors">
+            function <span class="apidocSignatureSpan">formsy-react.Form.prototype.__reactAutoBindMap.</span>setInputValidationErrors
+            <span class="apidocSignatureSpan">(errors)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.formsy-react.Form.prototype.__reactAutoBindMap.submit">
+            function <span class="apidocSignatureSpan">formsy-react.Form.prototype.__reactAutoBindMap.</span>submit
+            <span class="apidocSignatureSpan">(event)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.formsy-react.Form.prototype.__reactAutoBindMap.updateInputsWithError">
+            function <span class="apidocSignatureSpan">formsy-react.Form.prototype.__reactAutoBindMap.</span>updateInputsWithError
+            <span class="apidocSignatureSpan">(errors)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.formsy-react.Form.prototype.__reactAutoBindMap.validate">
+            function <span class="apidocSignatureSpan">formsy-react.Form.prototype.__reactAutoBindMap.</span>validate
+            <span class="apidocSignatureSpan">(component)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.formsy-react.Form.prototype.__reactAutoBindMap.validateForm">
+            function <span class="apidocSignatureSpan">formsy-react.Form.prototype.__reactAutoBindMap.</span>validateForm
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.formsy-react.Mixin">module formsy-react.Mixin</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.formsy-react.Mixin.componentDidUpdate">
+            function <span class="apidocSignatureSpan">formsy-react.Mixin.</span>componentDidUpdate
+            <span class="apidocSignatureSpan">(prevProps)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.formsy-react.Mixin.componentWillMount">
+            function <span class="apidocSignatureSpan">formsy-react.Mixin.</span>componentWillMount
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.formsy-react.Mixin.componentWillReceiveProps">
+            function <span class="apidocSignatureSpan">formsy-react.Mixin.</span>componentWillReceiveProps
+            <span class="apidocSignatureSpan">(nextProps)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.formsy-react.Mixin.componentWillUnmount">
+            function <span class="apidocSignatureSpan">formsy-react.Mixin.</span>componentWillUnmount
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.formsy-react.Mixin.getDefaultProps">
+            function <span class="apidocSignatureSpan">formsy-react.Mixin.</span>getDefaultProps
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.formsy-react.Mixin.getErrorMessage">
+            function <span class="apidocSignatureSpan">formsy-react.Mixin.</span>getErrorMessage
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.formsy-react.Mixin.getErrorMessages">
+            function <span class="apidocSignatureSpan">formsy-react.Mixin.</span>getErrorMessages
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.formsy-react.Mixin.getInitialState">
+            function <span class="apidocSignatureSpan">formsy-react.Mixin.</span>getInitialState
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.formsy-react.Mixin.getValue">
+            function <span class="apidocSignatureSpan">formsy-react.Mixin.</span>getValue
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.formsy-react.Mixin.hasValue">
+            function <span class="apidocSignatureSpan">formsy-react.Mixin.</span>hasValue
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.formsy-react.Mixin.isFormDisabled">
+            function <span class="apidocSignatureSpan">formsy-react.Mixin.</span>isFormDisabled
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.formsy-react.Mixin.isFormSubmitted">
+            function <span class="apidocSignatureSpan">formsy-react.Mixin.</span>isFormSubmitted
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.formsy-react.Mixin.isPristine">
+            function <span class="apidocSignatureSpan">formsy-react.Mixin.</span>isPristine
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.formsy-react.Mixin.isRequired">
+            function <span class="apidocSignatureSpan">formsy-react.Mixin.</span>isRequired
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.formsy-react.Mixin.isValid">
+            function <span class="apidocSignatureSpan">formsy-react.Mixin.</span>isValid
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.formsy-react.Mixin.isValidValue">
+            function <span class="apidocSignatureSpan">formsy-react.Mixin.</span>isValidValue
+            <span class="apidocSignatureSpan">(value)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.formsy-react.Mixin.resetValue">
+            function <span class="apidocSignatureSpan">formsy-react.Mixin.</span>resetValue
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.formsy-react.Mixin.setValidations">
+            function <span class="apidocSignatureSpan">formsy-react.Mixin.</span>setValidations
+            <span class="apidocSignatureSpan">(validations, required)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.formsy-react.Mixin.setValue">
+            function <span class="apidocSignatureSpan">formsy-react.Mixin.</span>setValue
+            <span class="apidocSignatureSpan">(value)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.formsy-react.Mixin.showError">
+            function <span class="apidocSignatureSpan">formsy-react.Mixin.</span>showError
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.formsy-react.Mixin.showRequired">
+            function <span class="apidocSignatureSpan">formsy-react.Mixin.</span>showRequired
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">formsy-react.Mixin.</span>contextTypes</span>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.formsy-react.Mixin.contextTypes">module formsy-react.Mixin.contextTypes</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.formsy-react.Mixin.contextTypes.formsy">
+            function <span class="apidocSignatureSpan">formsy-react.Mixin.contextTypes.</span>formsy
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.formsy-react.utils">module formsy-react.utils</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.formsy-react.utils.arraysDiffer">
+            function <span class="apidocSignatureSpan">formsy-react.utils.</span>arraysDiffer
+            <span class="apidocSignatureSpan">(a, b)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.formsy-react.utils.find">
+            function <span class="apidocSignatureSpan">formsy-react.utils.</span>find
+            <span class="apidocSignatureSpan">(collection, fn)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.formsy-react.utils.isSame">
+            function <span class="apidocSignatureSpan">formsy-react.utils.</span>isSame
+            <span class="apidocSignatureSpan">(a, b)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.formsy-react.utils.objectsDiffer">
+            function <span class="apidocSignatureSpan">formsy-react.utils.</span>objectsDiffer
+            <span class="apidocSignatureSpan">(a, b)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.formsy-react.validationRules">module formsy-react.validationRules</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.formsy-react.validationRules.equals">
+            function <span class="apidocSignatureSpan">formsy-react.validationRules.</span>equals
+            <span class="apidocSignatureSpan">(values, value, eql)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.formsy-react.validationRules.equalsField">
+            function <span class="apidocSignatureSpan">formsy-react.validationRules.</span>equalsField
+            <span class="apidocSignatureSpan">(values, value, field)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.formsy-react.validationRules.isAlpha">
+            function <span class="apidocSignatureSpan">formsy-react.validationRules.</span>isAlpha
+            <span class="apidocSignatureSpan">(values, value)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.formsy-react.validationRules.isAlphanumeric">
+            function <span class="apidocSignatureSpan">formsy-react.validationRules.</span>isAlphanumeric
+            <span class="apidocSignatureSpan">(values, value)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.formsy-react.validationRules.isDefaultRequiredValue">
+            function <span class="apidocSignatureSpan">formsy-react.validationRules.</span>isDefaultRequiredValue
+            <span class="apidocSignatureSpan">(values, value)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.formsy-react.validationRules.isEmail">
+            function <span class="apidocSignatureSpan">formsy-react.validationRules.</span>isEmail
+            <span class="apidocSignatureSpan">(values, value)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.formsy-react.validationRules.isEmptyString">
+            function <span class="apidocSignatureSpan">formsy-react.validationRules.</span>isEmptyString
+            <span class="apidocSignatureSpan">(values, value)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.formsy-react.validationRules.isExisty">
+            function <span class="apidocSignatureSpan">formsy-react.validationRules.</span>isExisty
+            <span class="apidocSignatureSpan">(values, value)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.formsy-react.validationRules.isFalse">
+            function <span class="apidocSignatureSpan">formsy-react.validationRules.</span>isFalse
+            <span class="apidocSignatureSpan">(values, value)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.formsy-react.validationRules.isFloat">
+            function <span class="apidocSignatureSpan">formsy-react.validationRules.</span>isFloat
+            <span class="apidocSignatureSpan">(values, value)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.formsy-react.validationRules.isInt">
+            function <span class="apidocSignatureSpan">formsy-react.validationRules.</span>isInt
+            <span class="apidocSignatureSpan">(values, value)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.formsy-react.validationRules.isLength">
+            function <span class="apidocSignatureSpan">formsy-react.validationRules.</span>isLength
+            <span class="apidocSignatureSpan">(values, value, length)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.formsy-react.validationRules.isNumeric">
+            function <span class="apidocSignatureSpan">formsy-react.validationRules.</span>isNumeric
+            <span class="apidocSignatureSpan">(values, value)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.formsy-react.validationRules.isSpecialWords">
+            function <span class="apidocSignatureSpan">formsy-react.validationRules.</span>isSpecialWords
+            <span class="apidocSignatureSpan">(values, value)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.formsy-react.validationRules.isTrue">
+            function <span class="apidocSignatureSpan">formsy-react.validationRules.</span>isTrue
+            <span class="apidocSignatureSpan">(values, value)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.formsy-react.validationRules.isUndefined">
+            function <span class="apidocSignatureSpan">formsy-react.validationRules.</span>isUndefined
+            <span class="apidocSignatureSpan">(values, value)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.formsy-react.validationRules.isUrl">
+            function <span class="apidocSignatureSpan">formsy-react.validationRules.</span>isUrl
+            <span class="apidocSignatureSpan">(values, value)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.formsy-react.validationRules.isWords">
+            function <span class="apidocSignatureSpan">formsy-react.validationRules.</span>isWords
+            <span class="apidocSignatureSpan">(values, value)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.formsy-react.validationRules.matchRegexp">
+            function <span class="apidocSignatureSpan">formsy-react.validationRules.</span>matchRegexp
+            <span class="apidocSignatureSpan">(values, value, regexp)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.formsy-react.validationRules.maxLength">
+            function <span class="apidocSignatureSpan">formsy-react.validationRules.</span>maxLength
+            <span class="apidocSignatureSpan">(values, value, length)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.formsy-react.validationRules.minLength">
+            function <span class="apidocSignatureSpan">formsy-react.validationRules.</span>minLength
+            <span class="apidocSignatureSpan">(values, value, length)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+</ol></div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.formsy-react" id="apidoc.module.formsy-react">module formsy-react</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.formsy-react.Decorator" id="apidoc.element.formsy-react.Decorator">
+        function <span class="apidocSignatureSpan">formsy-react.</span>Decorator
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">Decorator = function () {
+  return function (Component) {
+    return React.createClass({
+      mixins: [Mixin],
+      render: function render() {
+        return React.createElement(Component, _extends({
+          setValidations: this.setValidations,
+          setValue: this.setValue,
+          resetValue: this.resetValue,
+          getValue: this.getValue,
+          hasValue: this.hasValue,
+          getErrorMessage: this.getErrorMessage,
+          getErrorMessages: this.getErrorMessages,
+          isFormDisabled: this.isFormDisabled,
+          isValid: this.isValid,
+          isPristine: this.isPristine,
+          isFormSubmitted: this.isFormSubmitted,
+          isRequired: this.isRequired,
+          showRequired: this.showRequired,
+          showError: this.showError,
+          isValidValue: this.isValidValue
+        }, this.props));
+      }
+    });
+  };
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.formsy-react.Form" id="apidoc.element.formsy-react.Form">
+        function <span class="apidocSignatureSpan">formsy-react.</span>Form
+        <span class="apidocSignatureSpan">(props, context, updater)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">Form = function (props, context, updater) {
+  // This constructor is overridden by mocks. The argument is used
+  // by mocks to assert on what gets mounted.
+
+  if (process.env.NODE_ENV !== 'production') {
+    process.env.NODE_ENV !== 'production' ? warning(this instanceof Constructor, 'Something is calling a React component directly
+. Use a factory or ' + 'JSX instead. See: https://fb.me/react-legacyfactory') : undefined;
+  }
+
+  // Wire up auto-binding
+  if (this.__reactAutoBindMap) {
+    bindAutoBindMethods(this);
+  }
+
+  this.props = props;
+  this.context = context;
+  this.refs = emptyObject;
+  this.updater = updater || ReactNoopUpdateQueue;
+
+  this.state = null;
+
+  // ReactClasses doesn't have constructors. Instead, they use the
+  // getInitialState and componentWillMount methods for initialization.
+
+  var initialState = this.getInitialState ? this.getInitialState() : null;
+  if (process.env.NODE_ENV !== 'production') {
+    // We allow auto-mocks to proceed as if they're returning null.
+    if (typeof initialState === 'undefined' &amp;&amp; this.getInitialState._isMockFunction) {
+      // This is probably bad practice. Consider warning here and
+      // deprecating this convenience.
+      initialState = null;
+    }
+  }
+  !(typeof initialState === 'object' &amp;&amp; !Array.isArray(initialState)) ? process.env.NODE_ENV !== 'production' ? invariant(false, '%
+s.getInitialState(): must return an object or null', Constructor.displayName || 'ReactCompositeComponent') : invariant(false) :
+undefined;
+
+  this.state = initialState;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.formsy-react.HOC" id="apidoc.element.formsy-react.HOC">
+        function <span class="apidocSignatureSpan">formsy-react.</span>HOC
+        <span class="apidocSignatureSpan">(Component)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">HOC = function (Component) {
+  return React.createClass({
+    displayName: 'Formsy(' + getDisplayName(Component) + ')',
+    mixins: [Mixin],
+
+    render: function render() {
+      var innerRef = this.props.innerRef;
+
+      var propsForElement = _extends({
+        setValidations: this.setValidations,
+        setValue: this.setValue,
+        resetValue: this.resetValue,
+        getValue: this.getValue,
+        hasValue: this.hasValue,
+        getErrorMessage: this.getErrorMessage,
+        getErrorMessages: this.getErrorMessages,
+        isFormDisabled: this.isFormDisabled,
+        isValid: this.isValid,
+        isPristine: this.isPristine,
+        isFormSubmitted: this.isFormSubmitted,
+        isRequired: this.isRequired,
+        showRequired: this.showRequired,
+        showError: this.showError,
+        isValidValue: this.isValidValue
+      }, this.props);
+
+      if (innerRef) {
+        propsForElement.ref = innerRef;
+      }
+      return React.createElement(Component, propsForElement);
+    }
+  });
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.formsy-react.addValidationRule" id="apidoc.element.formsy-react.addValidationRule">
+        function <span class="apidocSignatureSpan">formsy-react.</span>addValidationRule
+        <span class="apidocSignatureSpan">(name, func)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">addValidationRule = function (name, func) {
+  validationRules[name] = func;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.formsy-react.defaults" id="apidoc.element.formsy-react.defaults">
+        function <span class="apidocSignatureSpan">formsy-react.</span>defaults
+        <span class="apidocSignatureSpan">(passedOptions)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">defaults = function (passedOptions) {
+  options = passedOptions;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.formsy-react.Form" id="apidoc.module.formsy-react.Form">module formsy-react.Form</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.formsy-react.Form.Form" id="apidoc.element.formsy-react.Form.Form">
+        function <span class="apidocSignatureSpan">formsy-react.</span>Form
+        <span class="apidocSignatureSpan">(props, context, updater)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">Form = function (props, context, updater) {
+  // This constructor is overridden by mocks. The argument is used
+  // by mocks to assert on what gets mounted.
+
+  if (process.env.NODE_ENV !== 'production') {
+    process.env.NODE_ENV !== 'production' ? warning(this instanceof Constructor, 'Something is calling a React component directly
+. Use a factory or ' + 'JSX instead. See: https://fb.me/react-legacyfactory') : undefined;
+  }
+
+  // Wire up auto-binding
+  if (this.__reactAutoBindMap) {
+    bindAutoBindMethods(this);
+  }
+
+  this.props = props;
+  this.context = context;
+  this.refs = emptyObject;
+  this.updater = updater || ReactNoopUpdateQueue;
+
+  this.state = null;
+
+  // ReactClasses doesn't have constructors. Instead, they use the
+  // getInitialState and componentWillMount methods for initialization.
+
+  var initialState = this.getInitialState ? this.getInitialState() : null;
+  if (process.env.NODE_ENV !== 'production') {
+    // We allow auto-mocks to proceed as if they're returning null.
+    if (typeof initialState === 'undefined' &amp;&amp; this.getInitialState._isMockFunction) {
+      // This is probably bad practice. Consider warning here and
+      // deprecating this convenience.
+      initialState = null;
+    }
+  }
+  !(typeof initialState === 'object' &amp;&amp; !Array.isArray(initialState)) ? process.env.NODE_ENV !== 'production' ? invariant(false, '%
+s.getInitialState(): must return an object or null', Constructor.displayName || 'ReactCompositeComponent') : invariant(false) :
+undefined;
+
+  this.state = initialState;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.formsy-react.Form.getDefaultProps" id="apidoc.element.formsy-react.Form.getDefaultProps">
+        function <span class="apidocSignatureSpan">formsy-react.Form.</span>getDefaultProps
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function getDefaultProps() {
+  return {
+    onSuccess: function onSuccess() {},
+    onError: function onError() {},
+    onSubmit: function onSubmit() {},
+    onValidSubmit: function onValidSubmit() {},
+    onInvalidSubmit: function onInvalidSubmit() {},
+    onValid: function onValid() {},
+    onInvalid: function onInvalid() {},
+    onChange: function onChange() {},
+    validationErrors: null,
+    preventExternalInvalidation: false
+  };
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+
+
+
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.formsy-react.Form.childContextTypes" id="apidoc.module.formsy-react.Form.childContextTypes">module formsy-react.Form.childContextTypes</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.formsy-react.Form.childContextTypes.formsy" id="apidoc.element.formsy-react.Form.childContextTypes.formsy">
+        function <span class="apidocSignatureSpan">formsy-react.Form.childContextTypes.</span>formsy
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">formsy = function () { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.formsy-react.Form.defaultProps" id="apidoc.module.formsy-react.Form.defaultProps">module formsy-react.Form.defaultProps</a></h1>
+
+
+
+
+    <h2>
+        <a href="#apidoc.element.formsy-react.Form.defaultProps.onChange" id="apidoc.element.formsy-react.Form.defaultProps.onChange">
+        function <span class="apidocSignatureSpan">formsy-react.Form.defaultProps.</span>onChange
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function onChange() {}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.formsy-react.Form.defaultProps.onError" id="apidoc.element.formsy-react.Form.defaultProps.onError">
+        function <span class="apidocSignatureSpan">formsy-react.Form.defaultProps.</span>onError
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function onError() {}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.formsy-react.Form.defaultProps.onInvalid" id="apidoc.element.formsy-react.Form.defaultProps.onInvalid">
+        function <span class="apidocSignatureSpan">formsy-react.Form.defaultProps.</span>onInvalid
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function onInvalid() {}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.formsy-react.Form.defaultProps.onInvalidSubmit" id="apidoc.element.formsy-react.Form.defaultProps.onInvalidSubmit">
+        function <span class="apidocSignatureSpan">formsy-react.Form.defaultProps.</span>onInvalidSubmit
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function onInvalidSubmit() {}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.formsy-react.Form.defaultProps.onSubmit" id="apidoc.element.formsy-react.Form.defaultProps.onSubmit">
+        function <span class="apidocSignatureSpan">formsy-react.Form.defaultProps.</span>onSubmit
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function onSubmit() {}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.formsy-react.Form.defaultProps.onSuccess" id="apidoc.element.formsy-react.Form.defaultProps.onSuccess">
+        function <span class="apidocSignatureSpan">formsy-react.Form.defaultProps.</span>onSuccess
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function onSuccess() {}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.formsy-react.Form.defaultProps.onValid" id="apidoc.element.formsy-react.Form.defaultProps.onValid">
+        function <span class="apidocSignatureSpan">formsy-react.Form.defaultProps.</span>onValid
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function onValid() {}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.formsy-react.Form.defaultProps.onValidSubmit" id="apidoc.element.formsy-react.Form.defaultProps.onValidSubmit">
+        function <span class="apidocSignatureSpan">formsy-react.Form.defaultProps.</span>onValidSubmit
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function onValidSubmit() {}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.formsy-react.Form.prototype" id="apidoc.module.formsy-react.Form.prototype">module formsy-react.Form.prototype</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.formsy-react.Form.prototype.attachToForm" id="apidoc.element.formsy-react.Form.prototype.attachToForm">
+        function <span class="apidocSignatureSpan">formsy-react.Form.prototype.</span>attachToForm
+        <span class="apidocSignatureSpan">(component)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function attachToForm(component) {
+
+  if (this.inputs.indexOf(component) === -1) {
+    this.inputs.push(component);
+  }
+
+  this.validate(component);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+  },
+
+  componentWillMount: function () {
+var configure = function () {
+  this.setValidations(this.props.validations, this.props.required);
+
+  // Pass a function instead?
+  this.context.formsy.<span class="apidocCodeKeywordSpan">attachToForm</span>(this);
+  //this.props._attachToForm(this);
+}.bind(this);
+
+if (!this.props.name) {
+  throw new Error('Form Input requires a name property when used');
+}
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.formsy-react.Form.prototype.componentDidMount" id="apidoc.element.formsy-react.Form.prototype.componentDidMount">
+        function <span class="apidocSignatureSpan">formsy-react.Form.prototype.</span>componentDidMount
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function componentDidMount() {
+  this.validateForm();
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.formsy-react.Form.prototype.componentDidUpdate" id="apidoc.element.formsy-react.Form.prototype.componentDidUpdate">
+        function <span class="apidocSignatureSpan">formsy-react.Form.prototype.</span>componentDidUpdate
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function componentDidUpdate() {
+
+  if (this.props.validationErrors &amp;&amp; _typeof(this.props.validationErrors) === 'object' &amp;&amp; Object.keys(this.props.validationErrors
+).length &gt; 0) {
+    this.setInputValidationErrors(this.props.validationErrors);
+  }
+
+  var newInputNames = this.inputs.map(function (component) {
+    return component.props.name;
+  });
+  if (utils.arraysDiffer(this.prevInputNames, newInputNames)) {
+    this.validateForm();
+  }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.formsy-react.Form.prototype.componentWillMount" id="apidoc.element.formsy-react.Form.prototype.componentWillMount">
+        function <span class="apidocSignatureSpan">formsy-react.Form.prototype.</span>componentWillMount
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function componentWillMount() {
+  this.inputs = [];
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.formsy-react.Form.prototype.componentWillUpdate" id="apidoc.element.formsy-react.Form.prototype.componentWillUpdate">
+        function <span class="apidocSignatureSpan">formsy-react.Form.prototype.</span>componentWillUpdate
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function componentWillUpdate() {
+  // Keep a reference to input names before form updates,
+  // to check if inputs has changed after render
+  this.prevInputNames = this.inputs.map(function (component) {
+    return component.props.name;
+  });
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.formsy-react.Form.prototype.constructor" id="apidoc.element.formsy-react.Form.prototype.constructor">
+        function <span class="apidocSignatureSpan">formsy-react.Form.prototype.</span>constructor
+        <span class="apidocSignatureSpan">(props, context, updater)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">constructor = function (props, context, updater) {
+  // This constructor is overridden by mocks. The argument is used
+  // by mocks to assert on what gets mounted.
+
+  if (process.env.NODE_ENV !== 'production') {
+    process.env.NODE_ENV !== 'production' ? warning(this instanceof Constructor, 'Something is calling a React component directly
+. Use a factory or ' + 'JSX instead. See: https://fb.me/react-legacyfactory') : undefined;
+  }
+
+  // Wire up auto-binding
+  if (this.__reactAutoBindMap) {
+    bindAutoBindMethods(this);
+  }
+
+  this.props = props;
+  this.context = context;
+  this.refs = emptyObject;
+  this.updater = updater || ReactNoopUpdateQueue;
+
+  this.state = null;
+
+  // ReactClasses doesn't have constructors. Instead, they use the
+  // getInitialState and componentWillMount methods for initialization.
+
+  var initialState = this.getInitialState ? this.getInitialState() : null;
+  if (process.env.NODE_ENV !== 'production') {
+    // We allow auto-mocks to proceed as if they're returning null.
+    if (typeof initialState === 'undefined' &amp;&amp; this.getInitialState._isMockFunction) {
+      // This is probably bad practice. Consider warning here and
+      // deprecating this convenience.
+      initialState = null;
+    }
+  }
+  !(typeof initialState === 'object' &amp;&amp; !Array.isArray(initialState)) ? process.env.NODE_ENV !== 'production' ? invariant(false, '%
+s.getInitialState(): must return an object or null', Constructor.displayName || 'ReactCompositeComponent') : invariant(false) :
+undefined;
+
+  this.state = initialState;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.formsy-react.Form.prototype.detachFromForm" id="apidoc.element.formsy-react.Form.prototype.detachFromForm">
+        function <span class="apidocSignatureSpan">formsy-react.Form.prototype.</span>detachFromForm
+        <span class="apidocSignatureSpan">(component)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function detachFromForm(component) {
+  var componentPos = this.inputs.indexOf(component);
+
+  if (componentPos !== -1) {
+    this.inputs = this.inputs.slice(0, componentPos).concat(this.inputs.slice(componentPos + 1));
+  }
+
+  this.validateForm();
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+if (!utils.isSame(this.props.validations, prevProps.validations) || !utils.isSame(this.props.required, prevProps.required)) {
+  this.context.formsy.validate(this);
+}
+  },
+
+  // Detach it when component unmounts
+  componentWillUnmount: function () {
+this.context.formsy.<span class="apidocCodeKeywordSpan">detachFromForm</span>(this);
+//this.props._detachFromForm(this);
+  },
+
+  setValidations: function (validations, required) {
+
+// Add validations to the store itself as the props object can not be modified
+this._validations = convertValidationsToObject(validations) || {};
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.formsy-react.Form.prototype.getChildContext" id="apidoc.element.formsy-react.Form.prototype.getChildContext">
+        function <span class="apidocSignatureSpan">formsy-react.Form.prototype.</span>getChildContext
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function getChildContext() {
+  var _this = this;
+
+  return {
+    formsy: {
+      attachToForm: this.attachToForm,
+      detachFromForm: this.detachFromForm,
+      validate: this.validate,
+      isFormDisabled: this.isFormDisabled,
+      isValidValue: function isValidValue(component, value) {
+        return _this.runValidation(component, value).isValid;
+      }
+    }
+  };
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.formsy-react.Form.prototype.getCurrentValues" id="apidoc.element.formsy-react.Form.prototype.getCurrentValues">
+        function <span class="apidocSignatureSpan">formsy-react.Form.prototype.</span>getCurrentValues
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function getCurrentValues() {
+  return this.inputs.reduce(function (data, component) {
+    var name = component.props.name;
+    data[name] = component.state._value;
+    return data;
+  }, {});
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.formsy-react.Form.prototype.getDOMNode" id="apidoc.element.formsy-react.Form.prototype.getDOMNode">
+        function <span class="apidocSignatureSpan">formsy-react.Form.prototype.</span>getDOMNode
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">getDOMNode = function () {
+  process.env.NODE_ENV !== 'production' ? warning(this.constructor[didWarnKey], '%s.getDOMNode(...) is deprecated. Please use ' + '
+ReactDOM.findDOMNode(instance) instead.', ReactInstanceMap.get(this).getName() || this.tagName || 'Unknown') : undefined;
+  this.constructor[didWarnKey] = true;
+  return findDOMNode(this);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.formsy-react.Form.prototype.getInitialState" id="apidoc.element.formsy-react.Form.prototype.getInitialState">
+        function <span class="apidocSignatureSpan">formsy-react.Form.prototype.</span>getInitialState
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function getInitialState() {
+  return {
+    isValid: true,
+    isSubmitting: false,
+    canChange: false
+  };
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.formsy-react.Form.prototype.getModel" id="apidoc.element.formsy-react.Form.prototype.getModel">
+        function <span class="apidocSignatureSpan">formsy-react.Form.prototype.</span>getModel
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function getModel() {
+  var currentValues = this.getCurrentValues();
+  return this.mapModel(currentValues);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.formsy-react.Form.prototype.getPristineValues" id="apidoc.element.formsy-react.Form.prototype.getPristineValues">
+        function <span class="apidocSignatureSpan">formsy-react.Form.prototype.</span>getPristineValues
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function getPristineValues() {
+  return this.inputs.reduce(function (data, component) {
+    var name = component.props.name;
+    data[name] = component.props.value;
+    return data;
+  }, {});
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.formsy-react.Form.prototype.isChanged" id="apidoc.element.formsy-react.Form.prototype.isChanged">
+        function <span class="apidocSignatureSpan">formsy-react.Form.prototype.</span>isChanged
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function isChanged() {
+  return !utils.isSame(this.getPristineValues(), this.getCurrentValues());
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.formsy-react.Form.prototype.isFormDisabled" id="apidoc.element.formsy-react.Form.prototype.isFormDisabled">
+        function <span class="apidocSignatureSpan">formsy-react.Form.prototype.</span>isFormDisabled
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function isFormDisabled() {
+  return this.props.disabled;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+  var messages = this.getErrorMessages();
+  return messages.length ? messages[0] : null;
+},
+getErrorMessages: function () {
+  return !this.isValid() || this.showRequired() ? (this.state._externalError || this.state._validationError || []) : [];
+},
+isFormDisabled: function () {
+  return this.context.formsy.<span class="apidocCodeKeywordSpan">isFormDisabled</span>();
+  //return this.props._isFormDisabled();
+},
+isValid: function () {
+  return this.state._isValid;
+},
+isPristine: function () {
+  return this.state._isPristine;
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.formsy-react.Form.prototype.mapModel" id="apidoc.element.formsy-react.Form.prototype.mapModel">
+        function <span class="apidocSignatureSpan">formsy-react.Form.prototype.</span>mapModel
+        <span class="apidocSignatureSpan">(model)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function mapModel(model) {
+
+  if (this.props.mapping) {
+    return this.props.mapping(model);
+  } else {
+    return formDataToObject.toObj(Object.keys(model).reduce(function (mappedModel, key) {
+
+      var keyArray = key.split('.');
+      var base = mappedModel;
+      while (keyArray.length) {
+        var currentKey = keyArray.shift();
+        base = base[currentKey] = keyArray.length ? base[currentKey] || {} : model[key];
+      }
+
+      return mappedModel;
+    }, {}));
+  }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.formsy-react.Form.prototype.render" id="apidoc.element.formsy-react.Form.prototype.render">
+        function <span class="apidocSignatureSpan">formsy-react.Form.prototype.</span>render
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function render() {
+  var _props = this.props,
+      mapping = _props.mapping,
+      validationErrors = _props.validationErrors,
+      onSubmit = _props.onSubmit,
+      onValid = _props.onValid,
+      onValidSubmit = _props.onValidSubmit,
+      onInvalid = _props.onInvalid,
+      onInvalidSubmit = _props.onInvalidSubmit,
+      onChange = _props.onChange,
+      reset = _props.reset,
+      preventExternalInvalidation = _props.preventExternalInvalidation,
+      onSuccess = _props.onSuccess,
+      onError = _props.onError,
+      nonFormsyProps = _objectWithoutProperties(_props, ['mapping', 'validationErrors', 'onSubmit', 'onValid', 'onValidSubmit', '
+onInvalid', 'onInvalidSubmit', 'onChange', 'reset', 'preventExternalInvalidation', 'onSuccess', 'onError']);
+
+  return React.createElement(
+    'form',
+    _extends({}, nonFormsyProps, { onSubmit: this.submit }),
+    this.props.children
+  );
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.formsy-react.Form.prototype.reset" id="apidoc.element.formsy-react.Form.prototype.reset">
+        function <span class="apidocSignatureSpan">formsy-react.Form.prototype.</span>reset
+        <span class="apidocSignatureSpan">(data)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function reset(data) {
+  this.setFormPristine(true);
+  this.resetModel(data);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.formsy-react.Form.prototype.resetModel" id="apidoc.element.formsy-react.Form.prototype.resetModel">
+        function <span class="apidocSignatureSpan">formsy-react.Form.prototype.</span>resetModel
+        <span class="apidocSignatureSpan">(data)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function resetModel(data) {
+  this.inputs.forEach(function (component) {
+    var name = component.props.name;
+    if (data &amp;&amp; data.hasOwnProperty(name)) {
+      component.setValue(data[name]);
+    } else {
+      component.resetValue();
+    }
+  });
+  this.validateForm();
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.formsy-react.Form.prototype.runRules" id="apidoc.element.formsy-react.Form.prototype.runRules">
+        function <span class="apidocSignatureSpan">formsy-react.Form.prototype.</span>runRules
+        <span class="apidocSignatureSpan">(value, currentValues, validations)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function runRules(value, currentValues, validations) {
+
+  var results = {
+    errors: [],
+    failed: [],
+    success: []
+  };
+  if (Object.keys(validations).length) {
+    Object.keys(validations).forEach(function (validationMethod) {
+
+      if (validationRules[validationMethod] &amp;&amp; typeof validations[validationMethod] === 'function') {
+        throw new Error('Formsy does not allow you to override default validations: ' + validationMethod);
+      }
+
+      if (!validationRules[validationMethod] &amp;&amp; typeof validations[validationMethod] !== 'function') {
+        throw new Error('Formsy does not have the validation rule: ' + validationMethod);
+      }
+
+      if (typeof validations[validationMethod] === 'function') {
+        var validation = validations[validationMethod](currentValues, value);
+        if (typeof validation === 'string') {
+          results.errors.push(validation);
+          results.failed.push(validationMethod);
+        } else if (!validation) {
+          results.failed.push(validationMethod);
+        }
+        return;
+      } else if (typeof validations[validationMethod] !== 'function') {
+        var validation = validationRules[validationMethod](currentValues, value, validations[validationMethod]);
+        if (typeof validation === 'string') {
+          results.errors.push(validation);
+          results.failed.push(validationMethod);
+        } else if (!validation) {
+          results.failed.push(validationMethod);
+        } else {
+          results.success.push(validationMethod);
+        }
+        return;
+      }
+
+      return results.success.push(validationMethod);
+    });
+  }
+
+  return results;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.formsy-react.Form.prototype.runValidation" id="apidoc.element.formsy-react.Form.prototype.runValidation">
+        function <span class="apidocSignatureSpan">formsy-react.Form.prototype.</span>runValidation
+        <span class="apidocSignatureSpan">(component, value)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function runValidation(component, value) {
+
+  var currentValues = this.getCurrentValues();
+  var validationErrors = component.props.validationErrors;
+  var validationError = component.props.validationError;
+  value = arguments.length === 2 ? value : component.state._value;
+
+  var validationResults = this.runRules(value, currentValues, component._validations);
+  var requiredResults = this.runRules(value, currentValues, component._requiredValidations);
+
+  // the component defines an explicit validate function
+  if (typeof component.validate === "function") {
+    validationResults.failed = component.validate() ? [] : ['failed'];
+  }
+
+  var isRequired = Object.keys(component._requiredValidations).length ? !!requiredResults.success.length : false;
+  var isValid = !validationResults.failed.length &amp;&amp; !(this.props.validationErrors &amp;&amp; this.props.validationErrors[component.props
+.name]);
+
+  return {
+    isRequired: isRequired,
+    isValid: isRequired ? false : isValid,
+    error: function () {
+
+      if (isValid &amp;&amp; !isRequired) {
+        return emptyArray;
+      }
+
+      if (validationResults.errors.length) {
+        return validationResults.errors;
+      }
+
+      if (this.props.validationErrors &amp;&amp; this.props.validationErrors[component.props.name]) {
+        return typeof this.props.validationErrors[component.props.name] === 'string' ? [this.props.validationErrors[component.props
+.name]] : this.props.validationErrors[component.props.name];
+      }
+
+      if (isRequired) {
+        var error = validationErrors[requiredResults.success[0]];
+        return error ? [error] : null;
+      }
+
+      if (validationResults.failed.length) {
+        return validationResults.failed.map(function (failed) {
+          return validationErrors[failed] ? validationErrors[failed] : validationError;
+        }).filter(function (x, pos, arr) {
+          // Remove duplicates
+          return arr.indexOf(x) === pos;
+        });
+      }
+    }.call(this)
+  };
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.formsy-react.Form.prototype.setFormPristine" id="apidoc.element.formsy-react.Form.prototype.setFormPristine">
+        function <span class="apidocSignatureSpan">formsy-react.Form.prototype.</span>setFormPristine
+        <span class="apidocSignatureSpan">(isPristine)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function setFormPristine(isPristine) {
+  this.setState({
+    _formSubmitted: !isPristine
+  });
+
+  // Iterate through each component and set it as pristine
+  // or "dirty".
+  this.inputs.forEach(function (component, index) {
+    component.setState({
+      _formSubmitted: !isPristine,
+      _isPristine: isPristine
+    });
+  });
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.formsy-react.Form.prototype.setInputValidationErrors" id="apidoc.element.formsy-react.Form.prototype.setInputValidationErrors">
+        function <span class="apidocSignatureSpan">formsy-react.Form.prototype.</span>setInputValidationErrors
+        <span class="apidocSignatureSpan">(errors)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function setInputValidationErrors(errors) {
+  this.inputs.forEach(function (component) {
+    var name = component.props.name;
+    var args = [{
+      _isValid: !(name in errors),
+      _validationError: typeof errors[name] === 'string' ? [errors[name]] : errors[name]
+    }];
+    component.setState.apply(component, args);
+  });
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.formsy-react.Form.prototype.submit" id="apidoc.element.formsy-react.Form.prototype.submit">
+        function <span class="apidocSignatureSpan">formsy-react.Form.prototype.</span>submit
+        <span class="apidocSignatureSpan">(event)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function submit(event) {
+
+  event &amp;&amp; event.preventDefault();
+
+  // Trigger form as not pristine.
+  // If any inputs have not been touched yet this will make them dirty
+  // so validation becomes visible (if based on isPristine)
+  this.setFormPristine(false);
+  var model = this.getModel();
+  this.props.onSubmit(model, this.resetModel, this.updateInputsWithError);
+  this.state.isValid ? this.props.onValidSubmit(model, this.resetModel, this.updateInputsWithError) : this.props.onInvalidSubmit
+(model, this.resetModel, this.updateInputsWithError);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.formsy-react.Form.prototype.updateInputsWithError" id="apidoc.element.formsy-react.Form.prototype.updateInputsWithError">
+        function <span class="apidocSignatureSpan">formsy-react.Form.prototype.</span>updateInputsWithError
+        <span class="apidocSignatureSpan">(errors)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function updateInputsWithError(errors) {
+  var _this2 = this;
+
+  Object.keys(errors).forEach(function (name, index) {
+    var component = utils.find(_this2.inputs, function (component) {
+      return component.props.name === name;
+    });
+    if (!component) {
+      throw new Error('You are trying to update an input that does not exist. ' + 'Verify errors object with input names. ' + JSON
+.stringify(errors));
+    }
+    var args = [{
+      _isValid: _this2.props.preventExternalInvalidation || false,
+      _externalError: typeof errors[name] === 'string' ? [errors[name]] : errors[name]
+    }];
+    component.setState.apply(component, args);
+  });
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.formsy-react.Form.prototype.validate" id="apidoc.element.formsy-react.Form.prototype.validate">
+        function <span class="apidocSignatureSpan">formsy-react.Form.prototype.</span>validate
+        <span class="apidocSignatureSpan">(component)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function validate(component) {
+
+  // Trigger onChange
+  if (this.state.canChange) {
+    this.props.onChange(this.getCurrentValues(), this.isChanged());
+  }
+
+  var validation = this.runValidation(component);
+  // Run through the validations, split them up and call
+  // the validator IF there is a value or it is required
+  component.setState({
+    _isValid: validation.isValid,
+    _isRequired: validation.isRequired,
+    _validationError: validation.error,
+    _externalError: null
+  }, this.validateForm);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+  // internally update, and this will never run
+  if (!utils.isSame(this.props.value, prevProps.value)) {
+    this.setValue(this.props.value);
+  }
+
+  // If validations or required is changed, run a new validation
+  if (!utils.isSame(this.props.validations, prevProps.validations) || !utils.isSame(this.props.required, prevProps.required)) {
+    this.context.formsy.<span class="apidocCodeKeywordSpan">validate</span>(this);
+  }
+},
+
+// Detach it when component unmounts
+componentWillUnmount: function () {
+  this.context.formsy.detachFromForm(this);
+  //this.props._detachFromForm(this);
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.formsy-react.Form.prototype.validateForm" id="apidoc.element.formsy-react.Form.prototype.validateForm">
+        function <span class="apidocSignatureSpan">formsy-react.Form.prototype.</span>validateForm
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function validateForm() {
+  var _this3 = this;
+
+  // We need a callback as we are validating all inputs again. This will
+  // run when the last component has set its state
+  var onValidationComplete = function () {
+    var allIsValid = this.inputs.every(function (component) {
+      return component.state._isValid;
+    });
+
+    this.setState({
+      isValid: allIsValid
+    });
+
+    if (allIsValid) {
+      this.props.onValid();
+    } else {
+      this.props.onInvalid();
+    }
+
+    // Tell the form that it can start to trigger change events
+    this.setState({
+      canChange: true
+    });
+  }.bind(this);
+
+  // Run validation again in case affected by other inputs. The
+  // last component validated will run the onValidationComplete callback
+  this.inputs.forEach(function (component, index) {
+    var validation = _this3.runValidation(component);
+    if (validation.isValid &amp;&amp; component.state._externalError) {
+      validation.isValid = false;
+    }
+    component.setState({
+      _isValid: validation.isValid,
+      _isRequired: validation.isRequired,
+      _validationError: validation.error,
+      _externalError: !validation.isValid &amp;&amp; component.state._externalError ? component.state._externalError : null
+    }, index === _this3.inputs.length - 1 ? onValidationComplete : null);
+  });
+
+  // If there are no inputs, set state where form is ready to trigger
+  // change event. New inputs might be added later
+  if (!this.inputs.length &amp;&amp; this.isMounted()) {
+    this.setState({
+      canChange: true
+    });
+  }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.formsy-react.Form.prototype.__reactAutoBindMap" id="apidoc.module.formsy-react.Form.prototype.__reactAutoBindMap">module formsy-react.Form.prototype.__reactAutoBindMap</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.formsy-react.Form.prototype.__reactAutoBindMap.attachToForm" id="apidoc.element.formsy-react.Form.prototype.__reactAutoBindMap.attachToForm">
+        function <span class="apidocSignatureSpan">formsy-react.Form.prototype.__reactAutoBindMap.</span>attachToForm
+        <span class="apidocSignatureSpan">(component)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function attachToForm(component) {
+
+  if (this.inputs.indexOf(component) === -1) {
+    this.inputs.push(component);
+  }
+
+  this.validate(component);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+  },
+
+  componentWillMount: function () {
+var configure = function () {
+  this.setValidations(this.props.validations, this.props.required);
+
+  // Pass a function instead?
+  this.context.formsy.<span class="apidocCodeKeywordSpan">attachToForm</span>(this);
+  //this.props._attachToForm(this);
+}.bind(this);
+
+if (!this.props.name) {
+  throw new Error('Form Input requires a name property when used');
+}
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.formsy-react.Form.prototype.__reactAutoBindMap.detachFromForm" id="apidoc.element.formsy-react.Form.prototype.__reactAutoBindMap.detachFromForm">
+        function <span class="apidocSignatureSpan">formsy-react.Form.prototype.__reactAutoBindMap.</span>detachFromForm
+        <span class="apidocSignatureSpan">(component)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function detachFromForm(component) {
+  var componentPos = this.inputs.indexOf(component);
+
+  if (componentPos !== -1) {
+    this.inputs = this.inputs.slice(0, componentPos).concat(this.inputs.slice(componentPos + 1));
+  }
+
+  this.validateForm();
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+if (!utils.isSame(this.props.validations, prevProps.validations) || !utils.isSame(this.props.required, prevProps.required)) {
+  this.context.formsy.validate(this);
+}
+  },
+
+  // Detach it when component unmounts
+  componentWillUnmount: function () {
+this.context.formsy.<span class="apidocCodeKeywordSpan">detachFromForm</span>(this);
+//this.props._detachFromForm(this);
+  },
+
+  setValidations: function (validations, required) {
+
+// Add validations to the store itself as the props object can not be modified
+this._validations = convertValidationsToObject(validations) || {};
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.formsy-react.Form.prototype.__reactAutoBindMap.getCurrentValues" id="apidoc.element.formsy-react.Form.prototype.__reactAutoBindMap.getCurrentValues">
+        function <span class="apidocSignatureSpan">formsy-react.Form.prototype.__reactAutoBindMap.</span>getCurrentValues
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function getCurrentValues() {
+  return this.inputs.reduce(function (data, component) {
+    var name = component.props.name;
+    data[name] = component.state._value;
+    return data;
+  }, {});
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.formsy-react.Form.prototype.__reactAutoBindMap.getDOMNode" id="apidoc.element.formsy-react.Form.prototype.__reactAutoBindMap.getDOMNode">
+        function <span class="apidocSignatureSpan">formsy-react.Form.prototype.__reactAutoBindMap.</span>getDOMNode
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">getDOMNode = function () {
+  process.env.NODE_ENV !== 'production' ? warning(this.constructor[didWarnKey], '%s.getDOMNode(...) is deprecated. Please use ' + '
+ReactDOM.findDOMNode(instance) instead.', ReactInstanceMap.get(this).getName() || this.tagName || 'Unknown') : undefined;
+  this.constructor[didWarnKey] = true;
+  return findDOMNode(this);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.formsy-react.Form.prototype.__reactAutoBindMap.getModel" id="apidoc.element.formsy-react.Form.prototype.__reactAutoBindMap.getModel">
+        function <span class="apidocSignatureSpan">formsy-react.Form.prototype.__reactAutoBindMap.</span>getModel
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function getModel() {
+  var currentValues = this.getCurrentValues();
+  return this.mapModel(currentValues);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.formsy-react.Form.prototype.__reactAutoBindMap.getPristineValues" id="apidoc.element.formsy-react.Form.prototype.__reactAutoBindMap.getPristineValues">
+        function <span class="apidocSignatureSpan">formsy-react.Form.prototype.__reactAutoBindMap.</span>getPristineValues
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function getPristineValues() {
+  return this.inputs.reduce(function (data, component) {
+    var name = component.props.name;
+    data[name] = component.props.value;
+    return data;
+  }, {});
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.formsy-react.Form.prototype.__reactAutoBindMap.isChanged" id="apidoc.element.formsy-react.Form.prototype.__reactAutoBindMap.isChanged">
+        function <span class="apidocSignatureSpan">formsy-react.Form.prototype.__reactAutoBindMap.</span>isChanged
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function isChanged() {
+  return !utils.isSame(this.getPristineValues(), this.getCurrentValues());
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.formsy-react.Form.prototype.__reactAutoBindMap.isFormDisabled" id="apidoc.element.formsy-react.Form.prototype.__reactAutoBindMap.isFormDisabled">
+        function <span class="apidocSignatureSpan">formsy-react.Form.prototype.__reactAutoBindMap.</span>isFormDisabled
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function isFormDisabled() {
+  return this.props.disabled;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+  var messages = this.getErrorMessages();
+  return messages.length ? messages[0] : null;
+},
+getErrorMessages: function () {
+  return !this.isValid() || this.showRequired() ? (this.state._externalError || this.state._validationError || []) : [];
+},
+isFormDisabled: function () {
+  return this.context.formsy.<span class="apidocCodeKeywordSpan">isFormDisabled</span>();
+  //return this.props._isFormDisabled();
+},
+isValid: function () {
+  return this.state._isValid;
+},
+isPristine: function () {
+  return this.state._isPristine;
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.formsy-react.Form.prototype.__reactAutoBindMap.mapModel" id="apidoc.element.formsy-react.Form.prototype.__reactAutoBindMap.mapModel">
+        function <span class="apidocSignatureSpan">formsy-react.Form.prototype.__reactAutoBindMap.</span>mapModel
+        <span class="apidocSignatureSpan">(model)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function mapModel(model) {
+
+  if (this.props.mapping) {
+    return this.props.mapping(model);
+  } else {
+    return formDataToObject.toObj(Object.keys(model).reduce(function (mappedModel, key) {
+
+      var keyArray = key.split('.');
+      var base = mappedModel;
+      while (keyArray.length) {
+        var currentKey = keyArray.shift();
+        base = base[currentKey] = keyArray.length ? base[currentKey] || {} : model[key];
+      }
+
+      return mappedModel;
+    }, {}));
+  }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.formsy-react.Form.prototype.__reactAutoBindMap.reset" id="apidoc.element.formsy-react.Form.prototype.__reactAutoBindMap.reset">
+        function <span class="apidocSignatureSpan">formsy-react.Form.prototype.__reactAutoBindMap.</span>reset
+        <span class="apidocSignatureSpan">(data)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function reset(data) {
+  this.setFormPristine(true);
+  this.resetModel(data);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.formsy-react.Form.prototype.__reactAutoBindMap.resetModel" id="apidoc.element.formsy-react.Form.prototype.__reactAutoBindMap.resetModel">
+        function <span class="apidocSignatureSpan">formsy-react.Form.prototype.__reactAutoBindMap.</span>resetModel
+        <span class="apidocSignatureSpan">(data)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function resetModel(data) {
+  this.inputs.forEach(function (component) {
+    var name = component.props.name;
+    if (data &amp;&amp; data.hasOwnProperty(name)) {
+      component.setValue(data[name]);
+    } else {
+      component.resetValue();
+    }
+  });
+  this.validateForm();
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.formsy-react.Form.prototype.__reactAutoBindMap.runRules" id="apidoc.element.formsy-react.Form.prototype.__reactAutoBindMap.runRules">
+        function <span class="apidocSignatureSpan">formsy-react.Form.prototype.__reactAutoBindMap.</span>runRules
+        <span class="apidocSignatureSpan">(value, currentValues, validations)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function runRules(value, currentValues, validations) {
+
+  var results = {
+    errors: [],
+    failed: [],
+    success: []
+  };
+  if (Object.keys(validations).length) {
+    Object.keys(validations).forEach(function (validationMethod) {
+
+      if (validationRules[validationMethod] &amp;&amp; typeof validations[validationMethod] === 'function') {
+        throw new Error('Formsy does not allow you to override default validations: ' + validationMethod);
+      }
+
+      if (!validationRules[validationMethod] &amp;&amp; typeof validations[validationMethod] !== 'function') {
+        throw new Error('Formsy does not have the validation rule: ' + validationMethod);
+      }
+
+      if (typeof validations[validationMethod] === 'function') {
+        var validation = validations[validationMethod](currentValues, value);
+        if (typeof validation === 'string') {
+          results.errors.push(validation);
+          results.failed.push(validationMethod);
+        } else if (!validation) {
+          results.failed.push(validationMethod);
+        }
+        return;
+      } else if (typeof validations[validationMethod] !== 'function') {
+        var validation = validationRules[validationMethod](currentValues, value, validations[validationMethod]);
+        if (typeof validation === 'string') {
+          results.errors.push(validation);
+          results.failed.push(validationMethod);
+        } else if (!validation) {
+          results.failed.push(validationMethod);
+        } else {
+          results.success.push(validationMethod);
+        }
+        return;
+      }
+
+      return results.success.push(validationMethod);
+    });
+  }
+
+  return results;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.formsy-react.Form.prototype.__reactAutoBindMap.runValidation" id="apidoc.element.formsy-react.Form.prototype.__reactAutoBindMap.runValidation">
+        function <span class="apidocSignatureSpan">formsy-react.Form.prototype.__reactAutoBindMap.</span>runValidation
+        <span class="apidocSignatureSpan">(component, value)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function runValidation(component, value) {
+
+  var currentValues = this.getCurrentValues();
+  var validationErrors = component.props.validationErrors;
+  var validationError = component.props.validationError;
+  value = arguments.length === 2 ? value : component.state._value;
+
+  var validationResults = this.runRules(value, currentValues, component._validations);
+  var requiredResults = this.runRules(value, currentValues, component._requiredValidations);
+
+  // the component defines an explicit validate function
+  if (typeof component.validate === "function") {
+    validationResults.failed = component.validate() ? [] : ['failed'];
+  }
+
+  var isRequired = Object.keys(component._requiredValidations).length ? !!requiredResults.success.length : false;
+  var isValid = !validationResults.failed.length &amp;&amp; !(this.props.validationErrors &amp;&amp; this.props.validationErrors[component.props
+.name]);
+
+  return {
+    isRequired: isRequired,
+    isValid: isRequired ? false : isValid,
+    error: function () {
+
+      if (isValid &amp;&amp; !isRequired) {
+        return emptyArray;
+      }
+
+      if (validationResults.errors.length) {
+        return validationResults.errors;
+      }
+
+      if (this.props.validationErrors &amp;&amp; this.props.validationErrors[component.props.name]) {
+        return typeof this.props.validationErrors[component.props.name] === 'string' ? [this.props.validationErrors[component.props
+.name]] : this.props.validationErrors[component.props.name];
+      }
+
+      if (isRequired) {
+        var error = validationErrors[requiredResults.success[0]];
+        return error ? [error] : null;
+      }
+
+      if (validationResults.failed.length) {
+        return validationResults.failed.map(function (failed) {
+          return validationErrors[failed] ? validationErrors[failed] : validationError;
+        }).filter(function (x, pos, arr) {
+          // Remove duplicates
+          return arr.indexOf(x) === pos;
+        });
+      }
+    }.call(this)
+  };
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.formsy-react.Form.prototype.__reactAutoBindMap.setFormPristine" id="apidoc.element.formsy-react.Form.prototype.__reactAutoBindMap.setFormPristine">
+        function <span class="apidocSignatureSpan">formsy-react.Form.prototype.__reactAutoBindMap.</span>setFormPristine
+        <span class="apidocSignatureSpan">(isPristine)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function setFormPristine(isPristine) {
+  this.setState({
+    _formSubmitted: !isPristine
+  });
+
+  // Iterate through each component and set it as pristine
+  // or "dirty".
+  this.inputs.forEach(function (component, index) {
+    component.setState({
+      _formSubmitted: !isPristine,
+      _isPristine: isPristine
+    });
+  });
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.formsy-react.Form.prototype.__reactAutoBindMap.setInputValidationErrors" id="apidoc.element.formsy-react.Form.prototype.__reactAutoBindMap.setInputValidationErrors">
+        function <span class="apidocSignatureSpan">formsy-react.Form.prototype.__reactAutoBindMap.</span>setInputValidationErrors
+        <span class="apidocSignatureSpan">(errors)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function setInputValidationErrors(errors) {
+  this.inputs.forEach(function (component) {
+    var name = component.props.name;
+    var args = [{
+      _isValid: !(name in errors),
+      _validationError: typeof errors[name] === 'string' ? [errors[name]] : errors[name]
+    }];
+    component.setState.apply(component, args);
+  });
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.formsy-react.Form.prototype.__reactAutoBindMap.submit" id="apidoc.element.formsy-react.Form.prototype.__reactAutoBindMap.submit">
+        function <span class="apidocSignatureSpan">formsy-react.Form.prototype.__reactAutoBindMap.</span>submit
+        <span class="apidocSignatureSpan">(event)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function submit(event) {
+
+  event &amp;&amp; event.preventDefault();
+
+  // Trigger form as not pristine.
+  // If any inputs have not been touched yet this will make them dirty
+  // so validation becomes visible (if based on isPristine)
+  this.setFormPristine(false);
+  var model = this.getModel();
+  this.props.onSubmit(model, this.resetModel, this.updateInputsWithError);
+  this.state.isValid ? this.props.onValidSubmit(model, this.resetModel, this.updateInputsWithError) : this.props.onInvalidSubmit
+(model, this.resetModel, this.updateInputsWithError);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.formsy-react.Form.prototype.__reactAutoBindMap.updateInputsWithError" id="apidoc.element.formsy-react.Form.prototype.__reactAutoBindMap.updateInputsWithError">
+        function <span class="apidocSignatureSpan">formsy-react.Form.prototype.__reactAutoBindMap.</span>updateInputsWithError
+        <span class="apidocSignatureSpan">(errors)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function updateInputsWithError(errors) {
+  var _this2 = this;
+
+  Object.keys(errors).forEach(function (name, index) {
+    var component = utils.find(_this2.inputs, function (component) {
+      return component.props.name === name;
+    });
+    if (!component) {
+      throw new Error('You are trying to update an input that does not exist. ' + 'Verify errors object with input names. ' + JSON
+.stringify(errors));
+    }
+    var args = [{
+      _isValid: _this2.props.preventExternalInvalidation || false,
+      _externalError: typeof errors[name] === 'string' ? [errors[name]] : errors[name]
+    }];
+    component.setState.apply(component, args);
+  });
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.formsy-react.Form.prototype.__reactAutoBindMap.validate" id="apidoc.element.formsy-react.Form.prototype.__reactAutoBindMap.validate">
+        function <span class="apidocSignatureSpan">formsy-react.Form.prototype.__reactAutoBindMap.</span>validate
+        <span class="apidocSignatureSpan">(component)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function validate(component) {
+
+  // Trigger onChange
+  if (this.state.canChange) {
+    this.props.onChange(this.getCurrentValues(), this.isChanged());
+  }
+
+  var validation = this.runValidation(component);
+  // Run through the validations, split them up and call
+  // the validator IF there is a value or it is required
+  component.setState({
+    _isValid: validation.isValid,
+    _isRequired: validation.isRequired,
+    _validationError: validation.error,
+    _externalError: null
+  }, this.validateForm);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+  // internally update, and this will never run
+  if (!utils.isSame(this.props.value, prevProps.value)) {
+    this.setValue(this.props.value);
+  }
+
+  // If validations or required is changed, run a new validation
+  if (!utils.isSame(this.props.validations, prevProps.validations) || !utils.isSame(this.props.required, prevProps.required)) {
+    this.context.formsy.<span class="apidocCodeKeywordSpan">validate</span>(this);
+  }
+},
+
+// Detach it when component unmounts
+componentWillUnmount: function () {
+  this.context.formsy.detachFromForm(this);
+  //this.props._detachFromForm(this);
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.formsy-react.Form.prototype.__reactAutoBindMap.validateForm" id="apidoc.element.formsy-react.Form.prototype.__reactAutoBindMap.validateForm">
+        function <span class="apidocSignatureSpan">formsy-react.Form.prototype.__reactAutoBindMap.</span>validateForm
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function validateForm() {
+  var _this3 = this;
+
+  // We need a callback as we are validating all inputs again. This will
+  // run when the last component has set its state
+  var onValidationComplete = function () {
+    var allIsValid = this.inputs.every(function (component) {
+      return component.state._isValid;
+    });
+
+    this.setState({
+      isValid: allIsValid
+    });
+
+    if (allIsValid) {
+      this.props.onValid();
+    } else {
+      this.props.onInvalid();
+    }
+
+    // Tell the form that it can start to trigger change events
+    this.setState({
+      canChange: true
+    });
+  }.bind(this);
+
+  // Run validation again in case affected by other inputs. The
+  // last component validated will run the onValidationComplete callback
+  this.inputs.forEach(function (component, index) {
+    var validation = _this3.runValidation(component);
+    if (validation.isValid &amp;&amp; component.state._externalError) {
+      validation.isValid = false;
+    }
+    component.setState({
+      _isValid: validation.isValid,
+      _isRequired: validation.isRequired,
+      _validationError: validation.error,
+      _externalError: !validation.isValid &amp;&amp; component.state._externalError ? component.state._externalError : null
+    }, index === _this3.inputs.length - 1 ? onValidationComplete : null);
+  });
+
+  // If there are no inputs, set state where form is ready to trigger
+  // change event. New inputs might be added later
+  if (!this.inputs.length &amp;&amp; this.isMounted()) {
+    this.setState({
+      canChange: true
+    });
+  }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.formsy-react.Mixin" id="apidoc.module.formsy-react.Mixin">module formsy-react.Mixin</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.formsy-react.Mixin.componentDidUpdate" id="apidoc.element.formsy-react.Mixin.componentDidUpdate">
+        function <span class="apidocSignatureSpan">formsy-react.Mixin.</span>componentDidUpdate
+        <span class="apidocSignatureSpan">(prevProps)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function componentDidUpdate(prevProps) {
+
+  // If the value passed has changed, set it. If value is not passed it will
+  // internally update, and this will never run
+  if (!utils.isSame(this.props.value, prevProps.value)) {
+    this.setValue(this.props.value);
+  }
+
+  // If validations or required is changed, run a new validation
+  if (!utils.isSame(this.props.validations, prevProps.validations) || !utils.isSame(this.props.required, prevProps.required)) {
+    this.context.formsy.validate(this);
+  }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.formsy-react.Mixin.componentWillMount" id="apidoc.element.formsy-react.Mixin.componentWillMount">
+        function <span class="apidocSignatureSpan">formsy-react.Mixin.</span>componentWillMount
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function componentWillMount() {
+  var configure = function () {
+    this.setValidations(this.props.validations, this.props.required);
+
+    // Pass a function instead?
+    this.context.formsy.attachToForm(this);
+    //this.props._attachToForm(this);
+  }.bind(this);
+
+  if (!this.props.name) {
+    throw new Error('Form Input requires a name property when used');
+  }
+
+<span class="apidocCodeCommentSpan">  /*
+  if (!this.props._attachToForm) {
+    return setTimeout(function () {
+      if (!this.isMounted()) return;
+      if (!this.props._attachToForm) {
+        throw new Error('Form Mixin requires component to be nested in a Form');
+      }
+      configure();
+    }.bind(this), 0);
+  }
+  */
+</span>  configure();
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.formsy-react.Mixin.componentWillReceiveProps" id="apidoc.element.formsy-react.Mixin.componentWillReceiveProps">
+        function <span class="apidocSignatureSpan">formsy-react.Mixin.</span>componentWillReceiveProps
+        <span class="apidocSignatureSpan">(nextProps)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function componentWillReceiveProps(nextProps) {
+  this.setValidations(nextProps.validations, nextProps.required);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.formsy-react.Mixin.componentWillUnmount" id="apidoc.element.formsy-react.Mixin.componentWillUnmount">
+        function <span class="apidocSignatureSpan">formsy-react.Mixin.</span>componentWillUnmount
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function componentWillUnmount() {
+  this.context.formsy.detachFromForm(this);
+  //this.props._detachFromForm(this);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.formsy-react.Mixin.getDefaultProps" id="apidoc.element.formsy-react.Mixin.getDefaultProps">
+        function <span class="apidocSignatureSpan">formsy-react.Mixin.</span>getDefaultProps
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function getDefaultProps() {
+  return {
+    validationError: '',
+    validationErrors: {}
+  };
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.formsy-react.Mixin.getErrorMessage" id="apidoc.element.formsy-react.Mixin.getErrorMessage">
+        function <span class="apidocSignatureSpan">formsy-react.Mixin.</span>getErrorMessage
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function getErrorMessage() {
+  var messages = this.getErrorMessages();
+  return messages.length ? messages[0] : null;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+// when the value is empty and the required prop is
+// passed to the input. showError() is true when the
+// value typed is invalid
+const className = this.showRequired() ? 'required' : this.showError() ? 'error' : null;
+
+// An error message is returned ONLY if the component is invalid
+// or the server has returned an error message
+const errorMessage = this.<span class="apidocCodeKeywordSpan">getErrorMessage</span>();
+
+return (
+  &lt;div className={className}&gt;
+    &lt;input type="text" onChange={this.changeValue} value={this.getValue()}/&gt;
+    &lt;span&gt;{errorMessage}&lt;/span&gt;
+  &lt;/div&gt;
+);
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.formsy-react.Mixin.getErrorMessages" id="apidoc.element.formsy-react.Mixin.getErrorMessages">
+        function <span class="apidocSignatureSpan">formsy-react.Mixin.</span>getErrorMessages
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function getErrorMessages() {
+  return !this.isValid() || this.showRequired() ? this.state._externalError || this.state._validationError || [] : [];
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+getValue: function () {
+  return this.state._value;
+},
+hasValue: function () {
+  return this.state._value !== '';
+},
+getErrorMessage: function () {
+  var messages = this.<span class="apidocCodeKeywordSpan">getErrorMessages</span>();
+  return messages.length ? messages[0] : null;
+},
+getErrorMessages: function () {
+  return !this.isValid() || this.showRequired() ? (this.state._externalError || this.state._validationError || []) : [];
+},
+isFormDisabled: function () {
+  return this.context.formsy.isFormDisabled();
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.formsy-react.Mixin.getInitialState" id="apidoc.element.formsy-react.Mixin.getInitialState">
+        function <span class="apidocSignatureSpan">formsy-react.Mixin.</span>getInitialState
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function getInitialState() {
+  return {
+    _value: this.props.value,
+    _isRequired: false,
+    _isValid: true,
+    _isPristine: true,
+    _pristineValue: this.props.value,
+    _validationError: [],
+    _externalError: null,
+    _formSubmitted: false
+  };
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.formsy-react.Mixin.getValue" id="apidoc.element.formsy-react.Mixin.getValue">
+        function <span class="apidocSignatureSpan">formsy-react.Mixin.</span>getValue
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function getValue() {
+  return this.state._value;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+      // An error message is returned ONLY if the component is invalid
+      // or the server has returned an error message
+      const errorMessage = this.getErrorMessage();
+
+      return (
+        &lt;div className={className}&gt;
+          &lt;input type="text" onChange={this.changeValue} value={this.<span class="apidocCodeKeywordSpan">getValue
+</span>()}/&gt;
+          &lt;span&gt;{errorMessage}&lt;/span&gt;
+        &lt;/div&gt;
+      );
+    }
+  });
+```
+The form element component is what gives the form validation functionality to whatever you want to put inside this wrapper. You
+do not have to use traditional inputs, it can be anything you want and the value of the form element can also be anything you want
+. As you can see it is very flexible, you just have a small API to help you identify the state of the component and set its value
+.
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.formsy-react.Mixin.hasValue" id="apidoc.element.formsy-react.Mixin.hasValue">
+        function <span class="apidocSignatureSpan">formsy-react.Mixin.</span>hasValue
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function hasValue() {
+  return this.state._value !== '';
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.formsy-react.Mixin.isFormDisabled" id="apidoc.element.formsy-react.Mixin.isFormDisabled">
+        function <span class="apidocSignatureSpan">formsy-react.Mixin.</span>isFormDisabled
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function isFormDisabled() {
+  return this.context.formsy.isFormDisabled();
+  //return this.props._isFormDisabled();
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+  var messages = this.getErrorMessages();
+  return messages.length ? messages[0] : null;
+},
+getErrorMessages: function () {
+  return !this.isValid() || this.showRequired() ? (this.state._externalError || this.state._validationError || []) : [];
+},
+isFormDisabled: function () {
+  return this.context.formsy.<span class="apidocCodeKeywordSpan">isFormDisabled</span>();
+  //return this.props._isFormDisabled();
+},
+isValid: function () {
+  return this.state._isValid;
+},
+isPristine: function () {
+  return this.state._isPristine;
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.formsy-react.Mixin.isFormSubmitted" id="apidoc.element.formsy-react.Mixin.isFormSubmitted">
+        function <span class="apidocSignatureSpan">formsy-react.Mixin.</span>isFormSubmitted
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function isFormSubmitted() {
+  return this.state._formSubmitted;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.formsy-react.Mixin.isPristine" id="apidoc.element.formsy-react.Mixin.isPristine">
+        function <span class="apidocSignatureSpan">formsy-react.Mixin.</span>isPristine
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function isPristine() {
+  return this.state._isPristine;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.formsy-react.Mixin.isRequired" id="apidoc.element.formsy-react.Mixin.isRequired">
+        function <span class="apidocSignatureSpan">formsy-react.Mixin.</span>isRequired
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function isRequired() {
+  return !!this.props.required;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.formsy-react.Mixin.isValid" id="apidoc.element.formsy-react.Mixin.isValid">
+        function <span class="apidocSignatureSpan">formsy-react.Mixin.</span>isValid
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function isValid() {
+  return this.state._isValid;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+  return this.state._value !== '';
+},
+getErrorMessage: function () {
+  var messages = this.getErrorMessages();
+  return messages.length ? messages[0] : null;
+},
+getErrorMessages: function () {
+  return !this.<span class="apidocCodeKeywordSpan">isValid</span>() || this.showRequired() ? (this.state._externalError || this.
+state._validationError || []) : [];
+},
+isFormDisabled: function () {
+  return this.context.formsy.isFormDisabled();
+  //return this.props._isFormDisabled();
+},
+isValid: function () {
+  return this.state._isValid;
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.formsy-react.Mixin.isValidValue" id="apidoc.element.formsy-react.Mixin.isValidValue">
+        function <span class="apidocSignatureSpan">formsy-react.Mixin.</span>isValidValue
+        <span class="apidocSignatureSpan">(value)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function isValidValue(value) {
+  return this.context.formsy.isValidValue.call(null, this, value);
+  //return this.props._isValidValue.call(null, this, value);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.formsy-react.Mixin.resetValue" id="apidoc.element.formsy-react.Mixin.resetValue">
+        function <span class="apidocSignatureSpan">formsy-react.Mixin.</span>resetValue
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function resetValue() {
+  this.setState({
+    _value: this.state._pristineValue,
+    _isPristine: true
+  }, function () {
+    this.context.formsy.validate(this);
+    //this.props._validate(this);
+  });
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.formsy-react.Mixin.setValidations" id="apidoc.element.formsy-react.Mixin.setValidations">
+        function <span class="apidocSignatureSpan">formsy-react.Mixin.</span>setValidations
+        <span class="apidocSignatureSpan">(validations, required)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function setValidations(validations, required) {
+
+  // Add validations to the store itself as the props object can not be modified
+  this._validations = convertValidationsToObject(validations) || {};
+  this._requiredValidations = required === true ? { isDefaultRequiredValue: true } : convertValidationsToObject(required);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+  validationError: '',
+  validationErrors: {}
+};
+  },
+
+  componentWillMount: function () {
+var configure = function () {
+  this.<span class="apidocCodeKeywordSpan">setValidations</span>(this.props.validations, this.props.required);
+
+  // Pass a function instead?
+  this.context.formsy.attachToForm(this);
+  //this.props._attachToForm(this);
+}.bind(this);
+
+if (!this.props.name) {
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.formsy-react.Mixin.setValue" id="apidoc.element.formsy-react.Mixin.setValue">
+        function <span class="apidocSignatureSpan">formsy-react.Mixin.</span>setValue
+        <span class="apidocSignatureSpan">(value)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function setValue(value) {
+  this.setState({
+    _value: value,
+    _isPristine: false
+  }, function () {
+    this.context.formsy.validate(this);
+    //this.props._validate(this);
+  }.bind(this));
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+// Add the Formsy Mixin
+mixins: [Formsy.Mixin],
+
+// setValue() will set the value of the component, which in
+// turn will validate it and the rest of the form
+changeValue(event) {
+  this.<span class="apidocCodeKeywordSpan">setValue</span>(event.currentTarget.value);
+},
+
+render() {
+  // Set a specific className based on the validation
+  // state of this component. showRequired() is true
+  // when the value is empty and the required prop is
+  // passed to the input. showError() is true when the
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.formsy-react.Mixin.showError" id="apidoc.element.formsy-react.Mixin.showError">
+        function <span class="apidocSignatureSpan">formsy-react.Mixin.</span>showError
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function showError() {
+  return !this.showRequired() &amp;&amp; !this.isValid();
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+    render() {
+// Set a specific className based on the validation
+// state of this component. showRequired() is true
+// when the value is empty and the required prop is
+// passed to the input. showError() is true when the
+// value typed is invalid
+const className = this.showRequired() ? 'required' : this.<span class="apidocCodeKeywordSpan">showError</span>() ? '
+;error' : null;
+
+// An error message is returned ONLY if the component is invalid
+// or the server has returned an error message
+const errorMessage = this.getErrorMessage();
+
+return (
+  &lt;div className={className}&gt;
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.formsy-react.Mixin.showRequired" id="apidoc.element.formsy-react.Mixin.showRequired">
+        function <span class="apidocSignatureSpan">formsy-react.Mixin.</span>showRequired
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function showRequired() {
+  return this.state._isRequired;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+    render() {
+// Set a specific className based on the validation
+// state of this component. showRequired() is true
+// when the value is empty and the required prop is
+// passed to the input. showError() is true when the
+// value typed is invalid
+const className = this.<span class="apidocCodeKeywordSpan">showRequired</span>() ? 'required' : this.showError() ? '
+;error' : null;
+
+// An error message is returned ONLY if the component is invalid
+// or the server has returned an error message
+const errorMessage = this.getErrorMessage();
+
+return (
+  &lt;div className={className}&gt;
+...</pre></li>
+    </ul>
+
+
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.formsy-react.Mixin.contextTypes" id="apidoc.module.formsy-react.Mixin.contextTypes">module formsy-react.Mixin.contextTypes</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.formsy-react.Mixin.contextTypes.formsy" id="apidoc.element.formsy-react.Mixin.contextTypes.formsy">
+        function <span class="apidocSignatureSpan">formsy-react.Mixin.contextTypes.</span>formsy
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">formsy = function () { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.formsy-react.utils" id="apidoc.module.formsy-react.utils">module formsy-react.utils</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.formsy-react.utils.arraysDiffer" id="apidoc.element.formsy-react.utils.arraysDiffer">
+        function <span class="apidocSignatureSpan">formsy-react.utils.</span>arraysDiffer
+        <span class="apidocSignatureSpan">(a, b)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function arraysDiffer(a, b) {
+  var isDifferent = false;
+  if (a.length !== b.length) {
+    isDifferent = true;
+  } else {
+    a.forEach(function (item, index) {
+      if (!this.isSame(item, b[index])) {
+        isDifferent = true;
+      }
+    }, this);
+  }
+  return isDifferent;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+return isDifferent;
+  },
+
+  isSame: function isSame(a, b) {
+if ((typeof a === 'undefined' ? 'undefined' : _typeof(a)) !== (typeof b === 'undefined' ? 'undefined
+' : _typeof(b))) {
+  return false;
+} else if (Array.isArray(a) &amp;&amp; Array.isArray(b)) {
+  return !this.<span class="apidocCodeKeywordSpan">arraysDiffer</span>(a, b);
+} else if (typeof a === 'function') {
+  return a.toString() === b.toString();
+} else if ((typeof a === 'undefined' ? 'undefined' : _typeof(a)) === 'object' &amp;&amp; a !== null
+ &amp;&amp; b !== null) {
+  return !this.objectsDiffer(a, b);
+}
+
+return a === b;
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.formsy-react.utils.find" id="apidoc.element.formsy-react.utils.find">
+        function <span class="apidocSignatureSpan">formsy-react.utils.</span>find
+        <span class="apidocSignatureSpan">(collection, fn)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function find(collection, fn) {
+  for (var i = 0, l = collection.length; i &lt; l; i++) {
+    var item = collection[i];
+    if (fn(item)) {
+      return item;
+    }
+  }
+  return null;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.formsy-react.utils.isSame" id="apidoc.element.formsy-react.utils.isSame">
+        function <span class="apidocSignatureSpan">formsy-react.utils.</span>isSame
+        <span class="apidocSignatureSpan">(a, b)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function isSame(a, b) {
+  if ((typeof a === 'undefined' ? 'undefined' : _typeof(a)) !== (typeof b === 'undefined' ? 'undefined' : _typeof(b))) {
+    return false;
+  } else if (Array.isArray(a) &amp;&amp; Array.isArray(b)) {
+    return !this.arraysDiffer(a, b);
+  } else if (typeof a === 'function') {
+    return a.toString() === b.toString();
+  } else if ((typeof a === 'undefined' ? 'undefined' : _typeof(a)) === 'object' &amp;&amp; a !== null &amp;&amp; b !== null) {
+    return !this.objectsDiffer(a, b);
+  }
+
+  return a === b;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+module.exports = {
+arraysDiffer: function arraysDiffer(a, b) {
+  var isDifferent = false;
+  if (a.length !== b.length) {
+    isDifferent = true;
+  } else {
+    a.forEach(function (item, index) {
+      if (!this.<span class="apidocCodeKeywordSpan">isSame</span>(item, b[index])) {
+        isDifferent = true;
+      }
+    }, this);
+  }
+  return isDifferent;
+},
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.formsy-react.utils.objectsDiffer" id="apidoc.element.formsy-react.utils.objectsDiffer">
+        function <span class="apidocSignatureSpan">formsy-react.utils.</span>objectsDiffer
+        <span class="apidocSignatureSpan">(a, b)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function objectsDiffer(a, b) {
+  var isDifferent = false;
+  if (Object.keys(a).length !== Object.keys(b).length) {
+    isDifferent = true;
+  } else {
+    Object.keys(a).forEach(function (key) {
+      if (!this.isSame(a[key], b[key])) {
+        isDifferent = true;
+      }
+    }, this);
+  }
+  return isDifferent;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+  if ((typeof a === 'undefined' ? 'undefined' : _typeof(a)) !== (typeof b === 'undefined' ? '
+undefined' : _typeof(b))) {
+    return false;
+  } else if (Array.isArray(a) &amp;&amp; Array.isArray(b)) {
+    return !this.arraysDiffer(a, b);
+  } else if (typeof a === 'function') {
+    return a.toString() === b.toString();
+  } else if ((typeof a === 'undefined' ? 'undefined' : _typeof(a)) === 'object' &amp;&amp; a !==
+null &amp;&amp; b !== null) {
+    return !this.<span class="apidocCodeKeywordSpan">objectsDiffer</span>(a, b);
+  }
+
+  return a === b;
+},
+
+find: function find(collection, fn) {
+  for (var i = 0, l = collection.length; i &lt; l; i++) {
+...</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.formsy-react.validationRules" id="apidoc.module.formsy-react.validationRules">module formsy-react.validationRules</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.formsy-react.validationRules.equals" id="apidoc.element.formsy-react.validationRules.equals">
+        function <span class="apidocSignatureSpan">formsy-react.validationRules.</span>equals
+        <span class="apidocSignatureSpan">(values, value, eql)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function equals(values, value, eql) {
+  return !_isExisty(value) || isEmpty(value) || value == eql;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.formsy-react.validationRules.equalsField" id="apidoc.element.formsy-react.validationRules.equalsField">
+        function <span class="apidocSignatureSpan">formsy-react.validationRules.</span>equalsField
+        <span class="apidocSignatureSpan">(values, value, field)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function equalsField(values, value, field) {
+  return value == values[field];
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.formsy-react.validationRules.isAlpha" id="apidoc.element.formsy-react.validationRules.isAlpha">
+        function <span class="apidocSignatureSpan">formsy-react.validationRules.</span>isAlpha
+        <span class="apidocSignatureSpan">(values, value)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function isAlpha(values, value) {
+  return validations.matchRegexp(values, value, /^[A-Z]+$/i);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.formsy-react.validationRules.isAlphanumeric" id="apidoc.element.formsy-react.validationRules.isAlphanumeric">
+        function <span class="apidocSignatureSpan">formsy-react.validationRules.</span>isAlphanumeric
+        <span class="apidocSignatureSpan">(values, value)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function isAlphanumeric(values, value) {
+  return validations.matchRegexp(values, value, /^[0-9A-Z]+$/i);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.formsy-react.validationRules.isDefaultRequiredValue" id="apidoc.element.formsy-react.validationRules.isDefaultRequiredValue">
+        function <span class="apidocSignatureSpan">formsy-react.validationRules.</span>isDefaultRequiredValue
+        <span class="apidocSignatureSpan">(values, value)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function isDefaultRequiredValue(values, value) {
+  return value === undefined || value === '';
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.formsy-react.validationRules.isEmail" id="apidoc.element.formsy-react.validationRules.isEmail">
+        function <span class="apidocSignatureSpan">formsy-react.validationRules.</span>isEmail
+        <span class="apidocSignatureSpan">(values, value)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function isEmail(values, value) {
+  return validations.matchRegexp(values, value, /^((([a-z]|\d|[!#\$%&amp;'\*\+\-\/=\?\^_`{\|}~]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF
+])+(\.([a-z]|\d|[!#\$%&amp;'\*\+\-\/=\?\^_`{\|}~]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])+)*)|((\x22)((((\x20|\x09)*(\x0d\x0a))?(\x20|\x09)+)?(([\x01-\x08\x0b\x0c\x0e-\x1f\x7f]|\x21|[\x23-\x5b]|[\x5d-\x7e]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])|(\\([\x01-\x09\x0b\x0c\x0d-\x7f]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF]))))*(((\x20|\x09)*(\x0d\x0a))?(\x20|\x09)+)?(\x22)))@((([a-z]|\d|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])|(([a-z]|\d|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])([a-z]|\d|-|\.|_|~|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])*([a-z]|\d|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])))\.)+(([a-z]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])|(([a-z]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])([a-z]|\d|-|\.|_|~|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])*([a-z]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])))$/i);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.formsy-react.validationRules.isEmptyString" id="apidoc.element.formsy-react.validationRules.isEmptyString">
+        function <span class="apidocSignatureSpan">formsy-react.validationRules.</span>isEmptyString
+        <span class="apidocSignatureSpan">(values, value)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function isEmptyString(values, value) {
+  return isEmpty(value);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.formsy-react.validationRules.isExisty" id="apidoc.element.formsy-react.validationRules.isExisty">
+        function <span class="apidocSignatureSpan">formsy-react.validationRules.</span>isExisty
+        <span class="apidocSignatureSpan">(values, value)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function isExisty(values, value) {
+  return _isExisty(value);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.formsy-react.validationRules.isFalse" id="apidoc.element.formsy-react.validationRules.isFalse">
+        function <span class="apidocSignatureSpan">formsy-react.validationRules.</span>isFalse
+        <span class="apidocSignatureSpan">(values, value)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function isFalse(values, value) {
+  return value === false;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.formsy-react.validationRules.isFloat" id="apidoc.element.formsy-react.validationRules.isFloat">
+        function <span class="apidocSignatureSpan">formsy-react.validationRules.</span>isFloat
+        <span class="apidocSignatureSpan">(values, value)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function isFloat(values, value) {
+  return validations.matchRegexp(values, value, /^(?:[-+]?(?:\d+))?(?:\.\d*)?(?:[eE][\+\-]?(?:\d+))?$/);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.formsy-react.validationRules.isInt" id="apidoc.element.formsy-react.validationRules.isInt">
+        function <span class="apidocSignatureSpan">formsy-react.validationRules.</span>isInt
+        <span class="apidocSignatureSpan">(values, value)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function isInt(values, value) {
+  return validations.matchRegexp(values, value, /^(?:[-+]?(?:0|[1-9]\d*))$/);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.formsy-react.validationRules.isLength" id="apidoc.element.formsy-react.validationRules.isLength">
+        function <span class="apidocSignatureSpan">formsy-react.validationRules.</span>isLength
+        <span class="apidocSignatureSpan">(values, value, length)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function isLength(values, value, length) {
+  return !_isExisty(value) || isEmpty(value) || value.length === length;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.formsy-react.validationRules.isNumeric" id="apidoc.element.formsy-react.validationRules.isNumeric">
+        function <span class="apidocSignatureSpan">formsy-react.validationRules.</span>isNumeric
+        <span class="apidocSignatureSpan">(values, value)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function isNumeric(values, value) {
+  if (typeof value === 'number') {
+    return true;
+  }
+  return validations.matchRegexp(values, value, /^[-+]?(?:\d*[.])?\d+$/);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.formsy-react.validationRules.isSpecialWords" id="apidoc.element.formsy-react.validationRules.isSpecialWords">
+        function <span class="apidocSignatureSpan">formsy-react.validationRules.</span>isSpecialWords
+        <span class="apidocSignatureSpan">(values, value)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function isSpecialWords(values, value) {
+  return validations.matchRegexp(values, value, /^[A-Z\s\u00C0-\u017F]+$/i);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.formsy-react.validationRules.isTrue" id="apidoc.element.formsy-react.validationRules.isTrue">
+        function <span class="apidocSignatureSpan">formsy-react.validationRules.</span>isTrue
+        <span class="apidocSignatureSpan">(values, value)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function isTrue(values, value) {
+  return value === true;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.formsy-react.validationRules.isUndefined" id="apidoc.element.formsy-react.validationRules.isUndefined">
+        function <span class="apidocSignatureSpan">formsy-react.validationRules.</span>isUndefined
+        <span class="apidocSignatureSpan">(values, value)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function isUndefined(values, value) {
+  return value === undefined;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.formsy-react.validationRules.isUrl" id="apidoc.element.formsy-react.validationRules.isUrl">
+        function <span class="apidocSignatureSpan">formsy-react.validationRules.</span>isUrl
+        <span class="apidocSignatureSpan">(values, value)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function isUrl(values, value) {
+  return validations.matchRegexp(values, value, /^(https?|s?ftp):\/\/(((([a-z]|\d|-|\.|_|~|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF
+])|(%[\da-f]{2})|[!\$&amp;'\(\)\*\+,;=]|:)*@)?(((\d|[1-9]\d|1\d\d|2[0-4]\d|25[0-5])\.(\d|[1-9]\d|1\d\d|2[0-4]\d|25[0-5])\.(\d|[1-9]\d|1\d\d|2[0-4]\d|25[0-5])\.(\d|[1-9]\d|1\d\d|2[0-4]\d|25[0-5]))|((([a-z]|\d|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])|(([a-z]|\d|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])([a-z]|\d|-|\.|_|~|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])*([a-z]|\d|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])))\.)+(([a-z]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])|(([a-z]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])([a-z]|\d|-|\.|_|~|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])*([a-z]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])))\.?)(:\d*)?)(\/((([a-z]|\d|-|\.|_|~|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])|(%[\da-f]{2})|[!\$&amp;'\(\)\*\+,;=]|:|@)+(\/(([a-z]|\d|-|\.|_|~|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])|(%[\da-f]{2})|[!\$&amp;'\(\)\*\+,;=]|:|@)*)*)?)?(\?((([a-z]|\d|-|\.|_|~|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])|(%[\da-f]{2})|[!\$&amp;'\(\)\*\+,;=]|:|@)|[\uE000-\uF8FF]|\/|\?)*)?(#((([a-z]|\d|-|\.|_|~|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])|(%[\da-f]{2})|[!\$&amp;'\(\)\*\+,;=]|:|@)|\/|\?)*)?$/i);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.formsy-react.validationRules.isWords" id="apidoc.element.formsy-react.validationRules.isWords">
+        function <span class="apidocSignatureSpan">formsy-react.validationRules.</span>isWords
+        <span class="apidocSignatureSpan">(values, value)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function isWords(values, value) {
+  return validations.matchRegexp(values, value, /^[A-Z\s]+$/i);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.formsy-react.validationRules.matchRegexp" id="apidoc.element.formsy-react.validationRules.matchRegexp">
+        function <span class="apidocSignatureSpan">formsy-react.validationRules.</span>matchRegexp
+        <span class="apidocSignatureSpan">(values, value, regexp)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function matchRegexp(values, value, regexp) {
+  return !_isExisty(value) || isEmpty(value) || regexp.test(value);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+isUndefined: function isUndefined(values, value) {
+  return value === undefined;
+},
+isEmptyString: function isEmptyString(values, value) {
+  return isEmpty(value);
+},
+isEmail: function isEmail(values, value) {
+  return validations.<span class="apidocCodeKeywordSpan">matchRegexp</span>(values, value, /^((([a-z]|\d|[!#\$%&amp;'\*\+\-\/=\?\^_`{\|}~]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])+(\.([a-z]|\d|[!#\$%&amp;'\*\+\-\/=\?\^_`{\|}~]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])+)*)|((\x22)((((\x20|\x09)*(\x0d\x0a))?(\x20|\x09)+)?(([\x01-\x08\x0b\x0c\x0e-\x1f\x7f]|\x21|[\x23-\x5b]|[\x5d-\x7e]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])|(\\([\x01-\x09\x0b\x0c\x0d-\x7f]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF]))))*(((\x20|\x09)*(\x0d\x0a))?(\x20|\x09)+)?(\x22)))@((([a-z]|\d|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])|(([a-z]|\d|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])([a-z]|\d|-|\.|_|~|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])*([a-z]|\d|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])))\.)+(([a-z]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])|(([a-z]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])([a-z]|\d|-|\.|_|~|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])*([a-z]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])))$/i);
+},
+isUrl: function isUrl(values, value) {
+  return validations.matchRegexp(values, value, /^(https?|s?ftp):\/\/(((([a-z]|\d|-|\.|_|~|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF
+])|(%[\da-f]{2})|[!\$&amp;'\(\)\*\+,;=]|:)*@)?(((\d|[1-9]\d|1\d\d|2[0-4]\d|25[0-5])\.(\d|[1-9]\d|1\d\d|2[0-4]\d|25[0-5])\.(\d|[1-9]\d|1\d\d|2[0-4]\d|25[0-5])\.(\d|[1-9]\d|1\d\d|2[0-4]\d|25[0-5]))|((([a-z]|\d|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])|(([a-z]|\d|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])([a-z]|\d|-|\.|_|~|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])*([a-z]|\d|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])))\.)+(([a-z]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])|(([a-z]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])([a-z]|\d|-|\.|_|~|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])*([a-z]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])))\.?)(:\d*)?)(\/((([a-z]|\d|-|\.|_|~|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])|(%[\da-f]{2})|[!\$&amp;'\(\)\*\+,;=]|:|@)+(\/(([a-z]|\d|-|\.|_|~|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])|(%[\da-f]{2})|[!\$&amp;'\(\)\*\+,;=]|:|@)*)*)?)?(\?((([a-z]|\d|-|\.|_|~|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])|(%[\da-f]{2})|[!\$&amp;'\(\)\*\+,;=]|:|@)|[\uE000-\uF8FF]|\/|\?)*)?(#((([a-z]|\d|-|\.|_|~|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])|(%[\da-f]{2})|[!\$&amp;'\(\)\*\+,;=]|:|@)|\/|\?)*)?$/i);
+},
+isTrue: function isTrue(values, value) {
+  return value === true;
+},
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.formsy-react.validationRules.maxLength" id="apidoc.element.formsy-react.validationRules.maxLength">
+        function <span class="apidocSignatureSpan">formsy-react.validationRules.</span>maxLength
+        <span class="apidocSignatureSpan">(values, value, length)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function maxLength(values, value, length) {
+  return !_isExisty(value) || value.length &lt;= length;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.formsy-react.validationRules.minLength" id="apidoc.element.formsy-react.validationRules.minLength">
+        function <span class="apidocSignatureSpan">formsy-react.validationRules.</span>minLength
+        <span class="apidocSignatureSpan">(values, value, length)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function minLength(values, value, length) {
+  return !_isExisty(value) || isEmpty(value) || value.length &gt;= length;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocFooterDiv">
+    [ this document was created with
+    <a href="https://github.com/kaizhu256/node-utility2" target="_blank">utility2</a>
+    ]
+</div>
+</div>
+</body></html>
